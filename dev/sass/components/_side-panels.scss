@@ -1,3 +1,4 @@
+// Fixed side panels
 #side-panel-block {
   display: block;
   position: fixed;
@@ -15,10 +16,14 @@
   text-align: center;
   z-index: 100;
 }
+
+// Left panel
 .left-side {
   float: left;
   left: 0px;
 }
+
+// Right panel
 .right-side {
   float: right;
   right: 0px;
@@ -26,4 +31,36 @@
     padding: 0px;
     margin: 0px;
   }
+}
+#service-side-title {
+  position: fixed;
+  float: none;
+  left: 0px;
+  bottom: 20px;
+  transform: rotate(-90deg);
+  transform-origin: 20px 0;
+
+  &::after {
+    position: relative;
+    top: -5px;
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background: $pastel-brown;
+    margin-left: 15px;
+  }
+
+  span {
+    display: inline;
+    color: $pastel-brown;
+  }
+}
+
+// Drilldown
+.js-drilldown-back {
+  a {
+    color: green;
+  }
+  background: black;
 }

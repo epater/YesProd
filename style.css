@@ -3884,6 +3884,10 @@ a.thumbnail {
 .icon-menu:before {
   content: "\E909"; }
 
+[class^="icon-"] {
+  font-size: 1.5rem;
+  color: #786452; }
+
 body {
   font-family: 'Comfortaa', cursive; }
 
@@ -3948,3 +3952,28 @@ header, main, footer {
   .right-side ul, .right-side li, .right-side a {
     padding: 0px;
     margin: 0px; }
+
+#service-side-title {
+  position: fixed;
+  float: none;
+  left: 0px;
+  bottom: 20px;
+  transform: rotate(-90deg);
+  transform-origin: 20px 0; }
+  #service-side-title::after {
+    position: relative;
+    top: -5px;
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background: #786452;
+    margin-left: 15px; }
+  #service-side-title span {
+    display: inline;
+    color: #786452; }
+
+.js-drilldown-back {
+  background: black; }
+  .js-drilldown-back a {
+    color: green; }

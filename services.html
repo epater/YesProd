@@ -10,35 +10,39 @@
 		<meta name="author" content="">
     <!-- Stylesheets -->
 		<link rel="stylesheet" href="./style.css">
-		<!-- JavaScripts -->
-    <script src="js/libraries/jquery.min.js"></script>
-    <script src="js/libraries/angular.min.js"></script>
-    <script src="js/libraries/foundation.min.js"></script>
-		<!-- <script src="js/app.js"></script> -->
 	</head>
 
 	<body>
 		<!--Side panels-->
 		<!--Left-side panel-->
 		<div class="left-side side-panel">
-			<ul class="vertical menu" data-drilldown>
-				<li>
-					<a href="#">
-						<i class="icon-menu"></i>
-					</a>
-					<ul class="menu">
-						<li>
-							<a href="">link</a>
-						</li>
-						<li>
-							<a href="">link</a>
-						</li>
-						<li>
-							<a href="">link</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
+			<!-- Top menu -->
+			<div>
+				<ul id="top-menu" class="vertical menu" data-drilldown data-auto-height="true" data-animate-height="true">
+					<li>
+						<a href="#">
+							<i class="icon-menu"></i>
+						</a>
+						<ul class="menu">
+							<li>
+								<a href="">link</a>
+							</li>
+							<li>
+								<a href="">link</a>
+							</li>
+							<li>
+								<a href="">link</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Service side title -->
+      <div id="service-side-title">
+        <span>Фото</span>
+        <span>Видео</span>
+      </div>
 		</div>
 
 		<!--Right-side panel-->
@@ -133,5 +137,18 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- JavaScripts -->
+    <script src="js/libraries/jquery.min.js"></script>
+    <script src="js/libraries/angular.min.js"></script>
+    <script src="js/libraries/foundation.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script>
+    	// $(document).foundation();
+    	var elem = new Foundation.Drilldown($("#top-menu"), {
+    		// backButton: '<a href="#">||</a>',
+    		backButtonPosition: "top"
+    	});
+    </script>
 	</body>
 </html>

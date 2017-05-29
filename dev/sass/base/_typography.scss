@@ -81,6 +81,11 @@
   content: "\e909";
 }
 
+[class^="icon-"] {
+  font-size: 1.5rem;
+  color: $pastel-brown;
+}
+
 body {
   font-family: 'Comfortaa', cursive;
 }
