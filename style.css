@@ -3932,14 +3932,6 @@ header, main, footer {
   line-height: 1.6rem;
   letter-spacing: 1px; }
 
-/* Medium and up */
-@media screen and (min-width: 40em) {
-  .header-info-title a {
-    float: left; }
-  .header-info-tel a {
-    display: block;
-    float: right; } }
-
 #footer {
   padding: 1rem;
   color: #786452;
@@ -4014,3 +4006,28 @@ header, main, footer {
   background: black; }
   .js-drilldown-back a {
     color: green; }
+
+#stuff-title {
+  padding-bottom: 1rem; }
+
+#stuff-title-text {
+  display: none; }
+
+.title-mobiles * {
+  display: block;
+  position: relative;
+  float: none;
+  width: 100%;
+  text-align: center;
+  color: #0c0c0c; }
+
+/* Small only */
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .header-info-title a {
+    float: left; }
+  .header-info-tel a {
+    display: block;
+    float: right; }
+  #stuff-title-text {
+    display: block; } }

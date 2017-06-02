@@ -1,5 +1,16 @@
-#ico-title-mobile {
-	i {
-		
+#stuff-title {
+	padding-bottom: 1rem;
+}
+#stuff-title-text {
+	display: none;
+}
+.title-mobiles {
+	* {
+		display: block;
+		position: relative;
+		float: none;
+		width: 100%;
+		text-align: center;
+		color: $smoky-black;
 	}
 }
