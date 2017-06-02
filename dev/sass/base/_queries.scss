@@ -1,10 +1,15 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-
+	// #service-side-title {
+	// 	display: none;
+	// }
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
+	// #service-side-title {
+	// 	display: block;
+	// }
 	.header-info-title {
 		a {
 			float: left;

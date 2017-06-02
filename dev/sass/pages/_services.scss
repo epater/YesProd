@@ -1,6 +1,9 @@
 // Services page app
 // Stuff app title
 #stuff-app-title {
+	margin-bottom: 1rem;
+	padding: 0rem 1rem;
+	box-shadow: 0 1rem 0.8rem -0.8rem rgba(68, 55, 48, 0.6);
 	a {
 		color: $gruello;
 		text-transform: uppercase;

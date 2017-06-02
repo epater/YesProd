@@ -4026,10 +4026,17 @@ header, main, footer {
   text-align: center;
   color: #0c0c0c; }
 
-#stuff-app-title a {
-  color: #a5907e;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
+.lighter {
+  color: #4e4b5c; }
+
+#stuff-app-title {
+  margin-bottom: 1rem;
+  padding: 0rem 1rem;
+  box-shadow: 0 1rem 0.8rem -0.8rem rgba(68, 55, 48, 0.6); }
+  #stuff-app-title a {
+    color: #a5907e;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
 
 /* Small only */
 /* Medium and up */
