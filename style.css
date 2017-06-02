@@ -3836,52 +3836,64 @@ a.thumbnail {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-video:before {
+.icon-menu:before {
   content: "\E900"; }
-
-.icon-movie:before {
-  content: "\E900"; }
-
-.icon-film:before {
-  content: "\E900"; }
-
-.icon-camera:before {
-  content: "\E901"; }
-
-.icon-photo:before {
-  content: "\E901"; }
-
-.icon-picture:before {
-  content: "\E901"; }
-
-.icon-image:before {
-  content: "\E901"; }
-
-.icon-library:before {
-  content: "\E902"; }
-
-.icon-university:before {
-  content: "\E902"; }
-
-.icon-chevron-thin-down:before {
-  content: "\E903"; }
-
-.icon-instagram-with-circle:before {
-  content: "\E904"; }
 
 .icon-youtube-with-circle:before {
-  content: "\E905"; }
+  content: "\E901"; }
+
+.icon-instagram-with-circle:before {
+  content: "\E902"; }
 
 .icon-facebook-with-circle:before {
-  content: "\E906"; }
+  content: "\E903"; }
 
 .icon-vk-with-circle:before {
+  content: "\E904"; }
+
+.icon-chevron-thin-down:before {
+  content: "\E905"; }
+
+.icon-library:before {
+  content: "\E906"; }
+
+.icon-university:before {
+  content: "\E906"; }
+
+.icon-camera:before {
   content: "\E907"; }
 
-.icon-camera2:before {
+.icon-photo:before {
+  content: "\E907"; }
+
+.icon-picture:before {
+  content: "\E907"; }
+
+.icon-image:before {
+  content: "\E907"; }
+
+.icon-video:before {
   content: "\E908"; }
 
-.icon-menu:before {
+.icon-movie:before {
+  content: "\E908"; }
+
+.icon-film:before {
+  content: "\E908"; }
+
+.icon-pricetags:before {
+  content: "\E909"; }
+
+.icon-tags:before {
+  content: "\E909"; }
+
+.icon-prices:before {
+  content: "\E909"; }
+
+.icon-shop:before {
+  content: "\E909"; }
+
+.icon-ecommerce:before {
   content: "\E909"; }
 
 [class^="icon-"] {
@@ -3899,6 +3911,34 @@ header, main, footer {
   margin: 0px;
   padding: 0px;
   z-index: 0; }
+
+#header {
+  padding: 1rem 3rem; }
+
+.header-info a {
+  display: block;
+  color: #786452;
+  text-align: center; }
+
+.header-info-title a {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem; }
+
+.header-info-tel a {
+  display: none;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  letter-spacing: 1px; }
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .header-info-title a {
+    float: left; }
+  .header-info-tel a {
+    display: block;
+    float: right; } }
 
 #footer {
   padding: 1rem;
@@ -3925,22 +3965,22 @@ header, main, footer {
   to {
     font-size: 15px; } }
 
-#side-panel-block {
-  display: block;
-  position: fixed;
-  float: none;
-  width: 100%;
-  height: 100vh;
-  z-index: 100; }
-
 .side-panel {
   display: block;
   position: fixed;
   float: none;
   height: 100vh;
   top: 0px;
+  padding: 1rem;
   text-align: center;
   z-index: 100; }
+  .side-panel .menu > li > a {
+    margin: 0rem;
+    padding: 0rem; }
+  .side-panel li {
+    margin-top: 0.7rem; }
+  .side-panel li:first-child {
+    margin-top: 0rem; }
 
 .left-side {
   float: left;
@@ -3949,17 +3989,14 @@ header, main, footer {
 .right-side {
   float: right;
   right: 0px; }
-  .right-side ul, .right-side li, .right-side a {
-    padding: 0px;
-    margin: 0px; }
 
 #service-side-title {
   position: fixed;
   float: none;
   left: 0px;
-  bottom: 20px;
+  bottom: 1rem;
   transform: rotate(-90deg);
-  transform-origin: 20px 0; }
+  transform-origin: 1rem 0; }
   #service-side-title::after {
     position: relative;
     top: -5px;

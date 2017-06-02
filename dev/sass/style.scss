@@ -6,12 +6,15 @@
 // Base
 @import "./base/_variables.scss";
 @import "./base/_typography.scss";
-// @import "./base/_.scss";
+@import "./base/_queries.scss";
 
 // Grid
 @import "./grid/_containers.scss";
-// @import "./grid/_.scss";
+@import "./grid/_header.scss";
 @import "./grid/_footer.scss";
 
 // Side panels
 @import "./components/_side-panels.scss";
+
+// Pages
+@import "./pages/_services.scss";

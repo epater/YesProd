@@ -1,0 +1,19 @@
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	.header-info-title {
+		a {
+			float: left;
+		}
+	}
+	.header-info-tel {
+		a {
+			display: block;
+			float: right;
+		}
+	}
+}

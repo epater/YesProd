@@ -26,7 +26,7 @@ module.exports = {
         })
       },
       {
-        test: /\.(svg|ttf|woff)$/,
+        test: /\.(ttf|woff|svg)$/,
         loader: "file-loader",
         options: {
           name: "fonts/[name].[ext]"

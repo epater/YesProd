@@ -1,0 +1,27 @@
+// Header info panel
+#header {
+	padding: 1rem 3rem;
+}
+.header-info {
+	a {
+		display: block;
+		color: $pastel-brown;
+		text-align: center;
+	}
+}
+.header-info-title {
+	a {
+		margin: 0rem;
+		padding: 0rem;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+}
+.header-info-tel {
+	a {
+		display: none;
+		font-size: 1.1rem;
+		line-height: 1.6rem;
+		letter-spacing: 1px;
+	}
+}
