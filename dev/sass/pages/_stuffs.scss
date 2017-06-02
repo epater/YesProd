@@ -1,0 +1,23 @@
+// Styles for stuff pages
+#stuff-title {
+	padding-bottom: 1rem;
+}
+#stuff-title-text {
+	display: none;
+	h2 {
+		margin: 0px;
+		padding: 0px;
+		line-height: normal;
+		font-weight: 500;
+	}
+}
+.title-mobiles {
+	* {
+		display: block;
+		position: relative;
+		float: none;
+		width: 100%;
+		text-align: center;
+		color: $smoky-black;
+	}
+}

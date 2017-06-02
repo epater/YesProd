@@ -4012,6 +4012,11 @@ header, main, footer {
 
 #stuff-title-text {
   display: none; }
+  #stuff-title-text h2 {
+    margin: 0px;
+    padding: 0px;
+    line-height: normal;
+    font-weight: 500; }
 
 .title-mobiles * {
   display: block;
@@ -4020,6 +4025,11 @@ header, main, footer {
   width: 100%;
   text-align: center;
   color: #0c0c0c; }
+
+#stuff-app-title a {
+  color: #a5907e;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 /* Small only */
 /* Medium and up */
