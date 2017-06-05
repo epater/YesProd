@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" ng-app>
+<html lang="" ng-app="stuffApp">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,37 +27,89 @@
 
     <!--Main content of the page-->
 		<main>
-			<!-- Stuff title -->
-			<div id="stuff-title" class="row">
-				<!-- Ico only in mobile -->
-				<!-- id="ico-title-mobile" -->
-				<div class="small-12 columns show-for-small-only title-mobiles">
-					<i class="icon-shop"></i>
-				</div>
-				<!-- Title in more wide screens -->
-				<div id="stuff-title-text" class="medium-12 columns title-mobiles">
-					<h2>Услуги и стоимость</h2>
-				</div>
-			</div>
+			<!-- Stuff app -->
+			<div ng-controller="mainController" id="stuff-app">
+				<!-- Stuff title -->
+				<div id="stuff-title" class="row">
+					<!-- Ico only in mobile -->
+					<!-- id="ico-title-mobile" -->
+					<div class="small-12 columns show-for-small-only title-mobiles">
+						<i class="icon-shop"></i>
+					</div>
 
-			<!-- Stuff body -->
-			<div id="stuff-budy">
-				<!-- Stuff app title -->
-				<div id="stuff-app-title" class="row">
-					<div class="small-12 columns">
-						<ul class="menu">
-							<li>
-								<a href="#">Видео</a>
-							</li>
-							<li>
-								<a href="#">Фото</a>
-							</li>
-						</ul>
+					<!-- Title in more wide screens -->
+					<div id="stuff-title-text" class="medium-12 columns title-mobiles">
+						<h2>Услуги и стоимость</h2>
 					</div>
 				</div>
 
-				<!-- Stuff app body -->
-				<div class="row"></div>
+				<!-- Stuff body -->
+				<div id="stuff-budy">
+					<!-- Stuff app title -->
+					<div id="stuff-app-title" class="row">
+						<div class="small-12 columns">
+							<ul class="menu">
+								<li>
+									<a href="#video">Видео</a>
+								</li>
+								<li>
+									<a href="#photo">Фото</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Stuff app body -->
+					<div ng-view id="stuff-app-view-body" class="row">
+						<!-- Video services -->
+						<div class="small-12 columns">
+							<div class="lighter">
+								<p>Расчитать стоимость услуг по видео сьемке сможет каждый, согласно действующих тарифов:</p>
+							</div>
+							<div>
+								<p>Операторская работа — 1250 грн час, 10 000 смена (до 12 часов)</p>
+							</div>
+							<div>
+								<p>Вторая камера — 500 грн час</p>
+							</div>
+							<div>
+								<p>Монтаж отснятого материала — 50 процентов от стоимости операторской работы</p>
+							</div>
+							<div>
+								<p>Монтаж предоставленного материала: Если конечный ролик должен быть более 3х минут, стоимость монтажа формируется следующим образом — 1000 грн + 100 грн за каждую последующую минуту.</p>
+							</div>
+							<div>
+								<p>Работа в празничное и ночное время + 30%</p>
+							</div>
+							<div>
+								<p>Срочный монтаж, от дня до 3х дней + 50%</p>
+							</div>
+							<div class="lighter">
+								<p>Так же наша студия предлагает широкий спектр услуг по созданию анимированых роликов, создании и анимации логотипов.
+	Мы всегда открыты к творческим проектам и сотрудничеству!</p>
+							</div>
+							<div>
+								<p>Работаем как в г.Днепр, так и по всей Украине.</p>
+							</div>
+						</div>
+
+						<!-- Photo services -->
+						<!-- <div class="small-12 columns">
+							<div class="lighter">
+								<p></p>
+							</div>
+							<div>
+								<p></p>
+							</div>
+							<div>
+								<p></p>
+							</div>
+							<div class="lighter">
+								<p></p>
+							</div>
+						</div> -->
+					</div>
+				</div>
 			</div>
 		</main>
 
@@ -172,9 +224,11 @@
 
 		<!-- JavaScripts -->
     <script src="js/libraries/jquery.min.js"></script>
-    <script src="js/libraries/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-route.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-animate.js"></script>
+	  <script src="js/app.js"></script>
     <script src="js/libraries/foundation.min.js"></script>
-    <!-- <script src="js/app.js"></script> -->
     <script>
     	// $(document).foundation();
     	var elem = new Foundation.Drilldown($("#top-menu"), {
