@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" ng-app>
+<html lang="">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,83 +27,115 @@
 
     <!--Main content of the page-->
 		<main>
-			<!-- Stuff title -->
-			<div id="stuff-title" class="row">
-				<!-- Ico only in mobile -->
-				<!-- id="ico-title-mobile" -->
-				<div class="small-12 columns show-for-small-only title-mobiles">
-					<i class="icon-shop"></i>
-				</div>
-				<!-- Title in more wide screens -->
-				<div id="stuff-title-text" class="medium-12 columns title-mobiles">
-					<h2>Услуги и стоимость</h2>
-				</div>
-			</div>
+			<!-- Stuff app -->
+			<div id="stuff-app" class="row">
+				<!-- Stuff title -->
+				<div id="stuff-title" class="row">
+					<!-- Ico only in mobile -->
+					<!-- id="ico-title-mobile" -->
+					<div class="small-12 columns show-for-small-only title-mobiles">
+						<i class="icon-shop"></i>
+					</div>
 
-			<!-- Stuff body -->
-			<div id="stuff-budy">
-				<!-- Stuff app title -->
-				<div id="stuff-app-title" class="row">
-					<div class="small-12 columns">
-						<ul class="menu">
-							<li>
-								<a href="#">Видео</a>
-							</li>
-							<li>
-								<a href="#">Фото</a>
-							</li>
-						</ul>
+					<!-- Title in more wide screens -->
+					<div id="stuff-title-text" class="medium-12 columns title-mobiles">
+						<h2>Услуги и стоимость</h2>
 					</div>
 				</div>
 
-				<!-- Stuff app body -->
-				<div class="row">
-					<!-- Video services -->
-					<div class="small-12 columns">
-						<div class="lighter">
-							<p>Расчитать стоимость услуг по видео сьемке сможет каждый, согласно действующих тарифов:</p>
-						</div>
-						<div>
-							<p>Операторская работа — 1250 грн час, 10 000 смена (до 12 часов)</p>
-						</div>
-						<div>
-							<p>Вторая камера — 500 грн час</p>
-						</div>
-						<div>
-							<p>Монтаж отснятого материала — 50 процентов от стоимости операторской работы</p>
-						</div>
-						<div>
-							<p>Монтаж предоставленного материала: Если конечный ролик должен быть более 3х минут, стоимость монтажа формируется следующим образом — 1000 грн + 100 грн за каждую последующую минуту.</p>
-						</div>
-						<div>
-							<p>Работа в празничное и ночное время + 30%</p>
-						</div>
-						<div>
-							<p>Срочный монтаж, от дня до 3х дней + 50%</p>
-						</div>
-						<div class="lighter">
-							<p>Так же наша студия предлагает широкий спектр услуг по созданию анимированых роликов, создании и анимации логотипов.
-Мы всегда открыты к творческим проектам и сотрудничеству!</p>
-						</div>
-						<div>
-							<p>Работаем как в г.Днепр, так и по всей Украине.</p>
+				<!-- Stuff body -->
+				<div id="stuff-budy">
+					<!-- Stuff app title -->
+					<div id="stuff-app-title" class="row">
+						<div class="small-12 columns">
+						<!-- class menu -->
+							<ul id="example-tabs" class="tabs" data-tabs>
+								<li class="tabs-title" is-active>
+									<a href="#video" aria-selected="true">Видео</a>
+								</li>
+								<li class="tabs-title">
+									<a href="#photo">Фото</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 
-					<!-- Photo services -->
-					<!-- <div class="small-12 columns">
-						<div class="lighter">
-							<p></p>
+					    <div class="tabs-content" data-tabs-content="example-tabs">
+					      <div class="tabs-panel is-active" id="panel1">
+					        <p>One</p>
+					        <p>Check me out! I'm a super cool Tab panel with text content!</p>
+					      </div>
+					      <div class="tabs-panel" id="panel2">
+					        <p>Two</p>
+					        <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
+					      </div>
+					      <div class="tabs-panel" id="panel3">
+					        <p>Three</p>
+					        <p>Check me out! I'm a super cool Tab panel with text content!</p>
+					      </div>
+					      <div class="tabs-panel" id="panel4">
+					        <p>Four</p>
+					        <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-2.jpg">
+					      </div>
+					      <div class="tabs-panel" id="panel5">
+					        <p>Five</p>
+					        <p>Check me out! I'm a super cool Tab panel with text content!</p>
+					      </div>
+					      <div class="tabs-panel" id="panel6">
+					        <p>Six</p>
+					        <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-8.jpg">
+					      </div>
+					    </div>
+
+					<!-- Stuff app body -->
+					<div id="stuff-app-view-body" class="row tabs-content" data-tabs-content="example-tabs">
+						<!-- Video services -->
+						<div id="video" class="small-12 columns tabs-panel is-active">
+							<div class="lighter">
+								<p>Расчитать стоимость услуг по видео сьемке сможет каждый, согласно действующих тарифов:</p>
+							</div>
+							<div>
+								<p>Операторская работа — 1250 грн час, 10 000 смена (до 12 часов)</p>
+							</div>
+							<div>
+								<p>Вторая камера — 500 грн час</p>
+							</div>
+							<div>
+								<p>Монтаж отснятого материала — 50 процентов от стоимости операторской работы</p>
+							</div>
+							<div>
+								<p>Монтаж предоставленного материала: Если конечный ролик должен быть более 3х минут, стоимость монтажа формируется следующим образом — 1000 грн + 100 грн за каждую последующую минуту.</p>
+							</div>
+							<div>
+								<p>Работа в празничное и ночное время + 30%</p>
+							</div>
+							<div>
+								<p>Срочный монтаж, от дня до 3х дней + 50%</p>
+							</div>
+							<div class="lighter">
+								<p>Так же наша студия предлагает широкий спектр услуг по созданию анимированых роликов, создании и анимации логотипов.
+	Мы всегда открыты к творческим проектам и сотрудничеству!</p>
+							</div>
+							<div>
+								<p>Работаем как в г.Днепр, так и по всей Украине.</p>
+							</div>
 						</div>
-						<div>
-							<p></p>
+
+						<!-- Photo services -->
+						<div id="photo" class="small-12 columns tabs-panel">
+							<div class="lighter">
+								<p></p>
+							</div>
+							<div>
+								<p></p>
+							</div>
+							<div>
+								<p></p>
+							</div>
+							<div class="lighter">
+								<p></p>
+							</div>
 						</div>
-						<div>
-							<p></p>
-						</div>
-						<div class="lighter">
-							<p></p>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -201,6 +233,12 @@
 
 		<!--Right-side panel-->
 		<div class="right-side side-panel">
+			<!-- Language switcher -->
+			<!-- <div id="lang-menu">
+				<a href="#">ru</a>
+				<span>/</span>
+				<a href="#">en</a>
+			</div> -->
 			<!-- Social links -->
 			<ul class="vertical menu">
 				<li>
@@ -220,11 +258,10 @@
 
 		<!-- JavaScripts -->
     <script src="js/libraries/jquery.min.js"></script>
-    <script src="js/libraries/angular.min.js"></script>
     <script src="js/libraries/foundation.min.js"></script>
-    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
     <script>
-    	// $(document).foundation();
+    	$(document).foundation();
     	var elem = new Foundation.Drilldown($("#top-menu"), {
     		// backButton: '<a href="#">||</a>',
     		backButtonPosition: "top"
