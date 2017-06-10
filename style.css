@@ -4029,14 +4029,32 @@ header, main, footer {
 .lighter {
   color: #4e4b5c; }
 
+.tabs, .tabs-content {
+  border: none; }
+
+.tabs-title > a {
+  padding: 0.8rem 1.15rem;
+  color: #a5907e; }
+
+.tabs-title > a:hover {
+  color: #a5907e; }
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+  color: #0c0c0c;
+  border-bottom: 2px solid #0c0c0c;
+  background: none; }
+
+.tabs-title > a[aria-selected='true'] {
+  color: #0c0c0c; }
+
 #stuff-app-title {
   margin-bottom: 1rem;
   padding: 0rem 1rem;
   box-shadow: 0 1rem 0.8rem -0.8rem rgba(68, 55, 48, 0.6); }
   #stuff-app-title a {
-    color: #a5907e;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-weight: bold; }
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {

@@ -27,3 +27,21 @@
 #stuff-app-view-body {
 	
 }
+.tabs, .tabs-content {
+	border: none;
+}
+.tabs-title > a {
+	padding: 0.8rem 1.15rem;
+	color: $gruello;
+}
+.tabs-title > a:hover {
+	color: $gruello;
+}
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+	color: $smoky-black;
+	border-bottom: 2px solid $smoky-black;
+	background: none;
+}
+.tabs-title > a[aria-selected='true'] {
+	color: $smoky-black;
+}
