@@ -30,6 +30,9 @@
 .right-side {
   float: right;
   right: 0px;
+  a:hover {
+    color: $gruello;
+  }
 }
 #service-side-title {
   position: fixed;

@@ -3,6 +3,12 @@
 	#service-side-title {
 		display: none;
 	}
+	.auto-fill-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: 5rem;
+		grid-gap: 0.1rem;
+	}
 }
 
 /* Medium and up */
