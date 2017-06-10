@@ -1,8 +1,230 @@
-<style type="text/css">
-	#stuff-app-view-body {
-		background: gold;
-	}
-</style>
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title></title>
+    <!-- SEO meta -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+    <!-- Stylesheets -->
+		<link rel="stylesheet" href="./style.css">
+	</head>
 
-<h1>Photo page</h1>
-{{message}}
+	<body>
+		<!--Header-->
+		<header id="header">
+			<div class="row expanded">
+				<div class="small-12 medium-6 columns header-info header-info-title">
+					<a href="#">YesProd</a>
+				</div>
+				<div class="small-12 medium-6 columns header-info header-info-tel">
+					<a href="tel:+380930621246">093 062 12 46</a>
+				</div>
+			</div>
+		</header>
+
+    <!--Main content of the page-->
+		<main>
+			<!-- Stuff app -->
+			<div id="stuff-app" class="row">
+				<!-- Stuff title -->
+				<div id="stuff-title" class="row">
+					<!-- Ico only in mobile -->
+					<!-- id="ico-title-mobile" -->
+					<div class="small-12 columns show-for-small-only title-mobiles">
+						<i class="icon-video"></i>
+					</div>
+
+					<!-- Title in more wide screens -->
+					<div id="stuff-title-text" class="medium-12 columns title-mobiles">
+						<h2>Работы</h2>
+					</div>
+				</div>
+
+				<!-- Stuff body -->
+				<div id="stuff-budy">
+					<!-- Stuff app title -->
+					<div id="stuff-app-title" class="row">
+						<div class="small-12 columns">
+						<!-- class menu -->
+							<ul id="example-tabs" class="tabs" data-tabs>
+								<li class="tabs-title is-active" is-active>
+									<a href="#video" aria-selected="true">Видео</a>
+								</li>
+								<li class="tabs-title">
+									<a href="#photo">Фото</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Stuff app body -->
+					<div id="stuff-app-view-body" class="row tabs-content" data-tabs-content="example-tabs">
+						<!-- Video services -->
+						<div id="video" class="small-12 columns tabs-panel is-active">
+							<div>
+								
+							</div>
+						</div>
+
+						<!-- Photo services -->
+						<div id="photo" class="small-12 columns tabs-panel">
+							<div class="auto-fill-grid">
+								<div>
+									<img src="">
+								</div>
+								<div>
+									<img src="">
+								</div>
+								<div>
+									<img src="">
+								</div>
+								<div>
+									<img src="">
+								</div>
+								<div>
+									<img src="">
+								</div>
+								<div>
+									<img src="">
+								</div>
+								<div>
+									<img src="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!--Footer-->
+		<footer id="footer">
+			<div class="row">
+				<!--Footer company title-->
+				<div id="company-footer-title" class="small-12 columns">
+					<h4>
+						<a href="">YesProd</a>
+					</h4>
+				</div>
+
+				<!--Footer open menu-->
+				<div id="footer-open-menu" class="small-12 columns">
+					<div class="menu-centered">
+						<ul class="vertical medium-horizontal menu">
+							<li>
+								<a href="">Главная</a>
+							</li>
+							<li>
+								<a href="">Школа</a>
+							</li>
+							<li>
+								<a href="">О нас</a>
+							</li>
+							<li>
+								<a href="">Услуги</a>
+							</li>
+							<li>
+								<a href="">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--Social footer links-->
+				<div id="social-footer-links" class="small-12 columns">
+					<div class="menu-centered">
+						<ul class="menu">
+							<li>
+								<a href="" class="icon-vk-with-circle"></a>
+							</li>
+							<li>
+								<a href="" class="icon-facebook-with-circle"></a>
+							</li>
+							<li>
+								<a href="" class="icon-youtube-with-circle"></a>
+							</li>
+							<li>
+								<a href="" class="icon-instagram-with-circle"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--Copyright-->
+				<div id="footer-copyright" class="small-12 columns">
+					<small>Crafted with <b>&hearts;</b> <a href="http://zuiker.github.io/AlexFedorov/portfolio.html">Alex Fedorov</a></small>
+				</div>
+			</div>
+		</footer>
+
+		<!--Side panels-->
+		<!--Left-side panel-->
+		<div class="left-side side-panel">
+			<!-- Top menu -->
+			<div>
+				<ul id="top-menu" class="vertical menu" data-drilldown data-auto-height="true" data-animate-height="true">
+					<li>
+						<a class="icon-menu" href="#"></a>
+						<ul class="menu">
+							<li>
+								<a href="">link</a>
+							</li>
+							<li>
+								<a href="">link</a>
+							</li>
+							<li>
+								<a href="">link</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Service side title -->
+      <div id="service-side-title">
+        <span>Фото</span>
+        <span>Видео</span>
+      </div>
+		</div>
+
+		<!--Right-side panel-->
+		<div class="right-side side-panel">
+			<!-- Language switcher -->
+			<!-- <div id="lang-menu">
+				<a href="#">ru</a>
+				<span>/</span>
+				<a href="#">en</a>
+			</div> -->
+			<!-- Social links -->
+			<ul class="vertical menu">
+				<li>
+					<a class="icon-vk-with-circle" href=""></a>
+				</li>
+				<li>
+					<a class="icon-facebook-with-circle" href=""></a>
+				</li>
+				<li>
+					<a class="icon-youtube-with-circle" href=""></a>
+				</li>
+				<li>
+					<a class="icon-instagram-with-circle" href=""></a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- JavaScripts -->
+    <script src="js/libraries/jquery.min.js"></script>
+    <script src="js/libraries/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+    	$(document).foundation();
+    	var elem = new Foundation.Drilldown($("#top-menu"), {
+    		// backButton: '<a href="#">||</a>',
+    		backButtonPosition: "top"
+    	});
+    </script>
+	</body>
+</html>
