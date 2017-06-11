@@ -29,7 +29,8 @@
     <div id="index-full-box">
       <!-- Video elem -->
       <div id="video-container">
-        <video src="video/index-bg.mp4" autoplay muted="true" loop="true">
+				<!--video/index-bg.mp4-->
+        <video src="" autoplay muted="true" loop="true">
           Sorry, your browser tooo old to get the content
         </video>
       </div>
@@ -131,37 +132,35 @@
 			</div>
 		</footer>
 
+		<!-- Top menu -->
+		<nav role="navigation">
+			<ul id="overlay-nav-menu" class="overlay-nav-menu">
+				<li>
+					<a href="index.html">Главная</a>
+				</li>
+				<li>
+					<a href="http://yesvideo.com.ua/school/">Школа</a>
+				</li>
+				<li>
+					<a href="about.html">О нас</a>
+				</li>
+				<li>
+					<a href="works.html">Работы</a>
+				</li>
+				<li>
+					<a href="services.html">Услуги</a>
+				</li>
+				<li>
+					<a href="contacts.html">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+
 		<!--Side panels-->
 		<!--Left-side panel-->
 		<div class="left-side side-panel">
-			<!-- Top menu -->
-			<div>
-				<ul id="top-menu" class="vertical menu" data-drilldown data-auto-height="true" data-animate-height="true">
-					<li>
-						<a class="icon-menu" href="#"></a>
-						<!--<ul class="menu">
-							<li>
-								<a href="index.html">Главная</a>
-							</li>
-							<li>
-								<a href="http://yesvideo.com.ua/school/">Школа</a>
-							</li>
-							<li>
-								<a href="about.html">О нас</a>
-							</li>
-							<li>
-								<a href="works.html">Работы</a>
-							</li>
-							<li>
-								<a href="services.html">Услуги</a>
-							</li>
-							<li>
-								<a href="contacts.html">Контакты</a>
-							</li>
-						</ul>-->
-					</li>
-				</ul>
-			</div>
+			<!--Ico Top Menu-->
+			<a data-toggle-menu class="overlay-nav-menu-toggle" href="#overlay-nav-menu"><i class="icon-menu"></i></a>
 
 			<!-- Service side title -->
       <div id="service-side-title">
@@ -201,10 +200,6 @@
     <script src="js/app.js"></script>
     <script>
     	$(document).foundation();
-    	var elem = new Foundation.Drilldown($("#top-menu"), {
-    		// backButton: '<a href="#">||</a>',
-    		backButtonPosition: "top"
-    	});
     </script>
 	</body>
 </html>
