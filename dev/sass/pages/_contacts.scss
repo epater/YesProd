@@ -1,0 +1,86 @@
+$contact-us-section-padding: 2rem;
+$contact-us-section-bg: $body-background;
+.contact-us-section {
+  padding: $contact-us-section-padding;
+  background: $contact-us-section-bg;
+  .contact-us-section-left {
+    padding-right: $contact-us-section-padding;
+    border-bottom: 1px solid $pastel-brown;
+    padding-bottom: $contact-us-section-padding;
+    margin-bottom: $contact-us-section-padding;
+    @include breakpoint(medium) {
+      border-right: 1px solid $pastel-brown;
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  .contact-us-section-right {
+    padding-left: $contact-us-section-padding;
+    @include breakpoint(medium) {
+      border-left: none;
+    }
+  }
+  .contact-us-header {
+    margin-bottom: 2rem;
+  }
+  @media screen and (max-width: 39.9375em) {
+    .contact-us-header {
+      margin-bottom: 0.9rem;
+    }
+    .contact-us-section-left {
+      padding-right: 0rem;
+    }
+    .contact-us-section-right {
+      padding-left: 0rem;
+    }
+  }
+  .responsive-embed {
+    margin-bottom: 0;
+    padding-bottom: 55%;
+  }
+  h3 {
+    color: $smoky-black;
+  }
+}
+.contact-us-form {
+  input[type=text],
+  input[type=email],
+  textarea {
+    margin-bottom: 1.5rem;
+  }
+}
+.contact-us-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input[type=submit] {
+    border-radius: 5000px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: $pastel-brown;
+    transition: all 1s ease;
+    &:hover {
+      background: $old-burgundy;
+    }
+  }
+  .contact-us-file-button {
+    background: transparent;
+    color: $dark-gray;
+  }
+}
+.contact-us-list {
+  list-style-type: none;
+  margin: 0;
+  li {
+    a {
+      color: $smoky-black;
+    }
+  }
+  i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: $dark-gray;
+  }
+}

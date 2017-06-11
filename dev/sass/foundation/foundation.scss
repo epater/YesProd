@@ -1,3 +1,5 @@
 @import 'scss/foundation';
 
 @include foundation-everything;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
