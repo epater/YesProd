@@ -93,15 +93,6 @@
   }
 }
 
-// School
-#index-school-box {
-  position: relative;
-  background: $smoky-black;
-}
-.centered-content {
-  @include centering(50%, 50%);
-}
-
 // Services
 #index-services-title {
   padding-top: 40px;

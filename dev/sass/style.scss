@@ -13,11 +13,20 @@
 @import "./grid/_header.scss";
 @import "./grid/_footer.scss";
 
+// Hover link
+@import "./components/_hover.scss";
+
 // Side panels
 @import "./components/_side-panels.scss";
 
 // Menu
 @import "./components/_menu.scss";
+
+// Testimonials
+@import "./components/_testimonials.scss";
+
+// Cards
+@import "./components/_cards.scss";
 
 // Pages
 @import "./pages/_index.scss";
