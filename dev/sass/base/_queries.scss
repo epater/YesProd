@@ -1,5 +1,13 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+	#index-title {
+		h1 {
+			font-size: 3rem;
+		}
+		span:last-child {
+			margin-left: 50px;
+		}
+	}
 	#service-side-title {
 		display: none;
 	}

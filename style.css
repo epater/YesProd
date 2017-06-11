@@ -4733,7 +4733,6 @@ header, main, footer {
     color: white; }
 
 .testimonial-slider-container {
-  background: #e6e6e6;
   padding: 1rem 1rem; }
   .testimonial-slider-container .orbit-previous,
   .testimonial-slider-container .orbit-next {
@@ -5069,6 +5068,10 @@ header, main, footer {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+  #index-title h1 {
+    font-size: 3rem; }
+  #index-title span:last-child {
+    margin-left: 50px; }
   #service-side-title {
     display: none; }
   .auto-fill-grid {
