@@ -4514,6 +4514,9 @@ a.thumbnail {
 .icon-vk-with-circle:before {
   content: "\E907"; }
 
+.icon-plus:before {
+  content: "\E90D"; }
+
 .icon-camera2:before {
   content: "\E908"; }
 
@@ -4683,12 +4686,13 @@ header, main, footer {
     color: #786452; }
 
 .overlay-nav-menu-toggle {
-  position: relative;
+  position: fixed;
+  top: 1rem;
   z-index: 10000;
   transition: all 0.4s ease-in-out; }
   .overlay-nav-menu-toggle:hover {
     transition: all 0.4s ease-in-out;
-    color: #575757; }
+    color: #9b8072; }
 
 .overlay-nav-menu {
   position: absolute;
@@ -4704,7 +4708,7 @@ header, main, footer {
   justify-content: center;
   opacity: 0;
   list-style: none;
-  background: #1779ba;
+  background: #0c0c0c;
   background-size: cover;
   text-align: center;
   transform: translateX(-100%) rotateX(40deg);
@@ -4713,66 +4717,25 @@ header, main, footer {
     font-size: 1.5rem; }
   .overlay-nav-menu a {
     display: block;
-    color: #fefefe;
+    color: #786452;
     font-weight: bold;
     height: 6.25rem;
     line-height: 6.25rem;
-    border-bottom: 1px solid rgba(254, 254, 254, 0.5);
+    border-bottom: 1px solid rgba(120, 100, 82, 0.5);
     text-decoration: none; }
     .overlay-nav-menu a:hover {
-      background-color: rgba(254, 254, 254, 0.6);
-      color: #0a0a0a; }
+      background-color: #a5907e;
+      color: #0c0c0c; }
   .overlay-nav-menu.is-open {
     top: 0;
     opacity: 1;
     transform: perspective(200px) translateX(0) rotateX(0); }
   .overlay-nav-menu.is-open ~ .overlay-nav-menu-toggle {
     display: inline-block;
+    top: 0.5rem;
     transition: all 0.4s ease-in-out;
     transform: rotate(135deg);
     color: white; }
-
-.testimonial-slider-container {
-  padding: 1rem 1rem; }
-  .testimonial-slider-container .orbit-previous,
-  .testimonial-slider-container .orbit-next {
-    color: #0a0a0a; }
-    .testimonial-slider-container .orbit-previous:hover, .testimonial-slider-container .orbit-previous:active, .testimonial-slider-container .orbit-previous:focus,
-    .testimonial-slider-container .orbit-next:hover,
-    .testimonial-slider-container .orbit-next:active,
-    .testimonial-slider-container .orbit-next:focus {
-      background-color: transparent; }
-  .testimonial-slider-container .orbit-previous {
-    left: -1rem; }
-  .testimonial-slider-container .orbit-next {
-    right: -1rem; }
-  .testimonial-slider-container .testimonial-slide {
-    display: flex;
-    justify-content: center; }
-  .testimonial-slider-container .testimonial-slide-content {
-    padding: 1rem 1.5rem; }
-    @media screen and (min-width: 40em) {
-      .testimonial-slider-container .testimonial-slide-content {
-        padding: 1rem 4rem; } }
-  .testimonial-slider-container .profile-pic {
-    max-width: 225px; }
-  .testimonial-slider-container .testimonial-slide-text {
-    padding-left: 3rem; }
-  .testimonial-slider-container .testimonial-slide-quotation {
-    font-size: 1.2rem;
-    position: relative; }
-    .testimonial-slider-container .testimonial-slide-quotation::before {
-      content: "\201C";
-      font-size: 6rem;
-      color: #d6d6d6;
-      position: absolute;
-      top: -3rem;
-      left: -3rem; }
-  .testimonial-slider-container .testimonial-slide-author-container {
-    display: flex; }
-    @media screen and (max-width: 39.9375em) {
-      .testimonial-slider-container .testimonial-slide-author-container .testimonial-slide-author-info {
-        margin-left: 1rem; } }
 
 #index-school-box {
   position: relative;
@@ -4790,6 +4753,9 @@ header, main, footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+#services-cards {
+  padding-bottom: 1rem; }
 
 .marketing-site-content-section {
   display: flex;

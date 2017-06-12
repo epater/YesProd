@@ -1,11 +1,12 @@
-$overlay-nav-menu-toggle-size: 4rem;
-$overlay-nav-menu-toggle-color: $black;
+$overlay-nav-menu-toggle-size: 3rem;
+$overlay-nav-menu-toggle-color: $old-burgundy;
 $overlay-nav-menu-link-height: 6.25rem;
-$overlay-nav-menu-link-color: $white;
+$overlay-nav-menu-link-color: $pastel-brown;
 $overlay-nav-menu-link-border: 1px solid rgba($overlay-nav-menu-link-color, 0.5);
-$overlay-nav-menu-bg: $primary-color;
+$overlay-nav-menu-bg: $smoky-black;
 .overlay-nav-menu-toggle {
-  position: relative;
+  position: fixed;
+  top: 1rem;
   z-index: 10000;
   transition: all 0.4s ease-in-out;
 
@@ -45,8 +46,8 @@ $overlay-nav-menu-bg: $primary-color;
     border-bottom: $overlay-nav-menu-link-border;
     text-decoration: none;
     &:hover {
-      background-color: rgba($white, 0.6);
-      color: $black;
+      background-color: $gruello;
+      color: $smoky-black;
     }
   }
   &.is-open {
@@ -56,6 +57,7 @@ $overlay-nav-menu-bg: $primary-color;
   }
   &.is-open ~ .overlay-nav-menu-toggle {
     display: inline-block;
+    top: 0.5rem;
     transition: all 0.4s ease-in-out;
     transform: rotate(135deg);
     color: lighten($overlay-nav-menu-toggle-color, 100%);

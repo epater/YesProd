@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html class="no-js" lang="">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,9 +10,41 @@
 		<meta name="author" content="">
     <!-- Stylesheets -->
 		<link rel="stylesheet" href="./style.css">
+		<!--To orbit-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.css">
 	</head>
 
 	<body>
+		<!--Top menu-->
+		<div id="top-menu" class="row expanded">
+			<div class="small-12 columns">
+				<nav role="navigation">
+					<ul id="overlay-nav-menu" class="overlay-nav-menu">
+						<li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="http://yesvideo.com.ua/school/">Школа</a>
+						</li>
+						<li>
+							<a href="about.html">О нас</a>
+						</li>
+						<li>
+							<a href="works.html">Работы</a>
+						</li>
+						<li>
+							<a href="services.html">Услуги</a>
+						</li>
+						<li>
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+					<!--Ico-->
+					<a data-toggle-menu class="overlay-nav-menu-toggle" href="#top-menu"><i class="icon-plus"></i></a>
+				</nav>
+			</div>
+		</div>
+
 		<!--Header-->
 		<header id="header">
 			<div class="row expanded">
@@ -92,37 +124,10 @@
 				</div>
 			</div>
 		</footer>
-
-		<!-- Top menu -->
-		<nav role="navigation">
-			<ul id="overlay-nav-menu" class="overlay-nav-menu">
-				<li>
-					<a href="index.html">Главная</a>
-				</li>
-				<li>
-					<a href="http://yesvideo.com.ua/school/">Школа</a>
-				</li>
-				<li>
-					<a href="about.html">О нас</a>
-				</li>
-				<li>
-					<a href="works.html">Работы</a>
-				</li>
-				<li>
-					<a href="services.html">Услуги</a>
-				</li>
-				<li>
-					<a href="contacts.html">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-
+		
 		<!--Side panels-->
 		<!--Left-side panel-->
 		<div class="left-side side-panel">
-			<!--Ico Top Menu-->
-			<a data-toggle-menu class="overlay-nav-menu-toggle" href="#overlay-nav-menu"><i class="icon-menu"></i></a>
-
 			<!-- Service side title -->
       <div id="service-side-title">
         <span>Фото</span>
@@ -157,6 +162,7 @@
 
 		<!-- JavaScripts -->
     <script src="js/libraries/jquery.min.js"></script>
+		<script src="js/libraries/what-input.min.js"></script>
     <script src="js/libraries/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <script>

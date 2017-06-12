@@ -9,9 +9,9 @@
 @font-face {
   font-family: 'yesprod';
   src:
-    url('../../fonts/yesprod.ttf?c05uuo') format('truetype'),
-    url('../../fonts/yesprod.woff?c05uuo') format('woff'),
-    url('../../fonts/yesprod.svg?c05uuo#yesprod') format('svg');
+    url('../../fonts/yesprod.ttf?3vml84') format('truetype'),
+    url('../../fonts/yesprod.woff?3vml84') format('woff'),
+    url('../../fonts/yesprod.svg?3vml84#yesprod') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -81,6 +81,9 @@
 }
 .icon-vk-with-circle:before {
   content: "\e907";
+}
+.icon-plus:before {
+  content: "\e90d";
 }
 .icon-camera2:before {
   content: "\e908";
