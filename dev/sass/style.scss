@@ -2,6 +2,9 @@
 // Foundation styles
 @import "./foundation/foundation.scss";
 
+// Gallery carousel
+@import "./components/lightcase/lightcase.scss";
+
 /* Custom styles */
 // Base
 @import "./base/_variables.scss";

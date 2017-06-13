@@ -9,9 +9,9 @@
 @font-face {
   font-family: 'yesprod';
   src:
-    url('./fonts/yesprod.ttf?3vml84') format('truetype'),
-    url('./fonts/yesprod.woff?3vml84') format('woff'),
-    url('./fonts/yesprod.svg?3vml84#yesprod') format('svg');
+    url('fonts/yesprod.ttf?f9qh51') format('truetype'),
+    url('fonts/yesprod.woff?f9qh51') format('woff'),
+    url('fonts/yesprod.svg?f9qh51#yesprod') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -57,6 +57,15 @@
 }
 .icon-university:before {
   content: "\e902";
+}
+.icon-chevron-thin-right:before {
+  content: "\e90e";
+}
+.icon-chevron-thin-left:before {
+  content: "\e90f";
+}
+.icon-cross:before {
+  content: "\e910";
 }
 .icon-phone:before {
   content: "\e90a";
