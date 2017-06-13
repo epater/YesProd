@@ -2,6 +2,9 @@
 #header {
 	padding: 1rem 3rem;
 	z-index: 100;
+	a {
+		// display: block;
+	}
 }
 .header-info {
 	a {
@@ -25,4 +28,7 @@
 		line-height: 1.6rem;
 		letter-spacing: 1px;
 	}
+}
+.header-info-description {
+	display: none;
 }

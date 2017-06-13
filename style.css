@@ -4560,6 +4560,9 @@ header, main, footer {
   line-height: 1.6rem;
   letter-spacing: 1px; }
 
+.header-info-description {
+  display: none; }
+
 #footer {
   padding: 1rem;
   color: #786452;
@@ -4807,6 +4810,8 @@ header, main, footer {
   left: 0px; }
   #index-full-box #video-container {
     position: absolute;
+    width: 100%;
+    height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -4814,15 +4819,6 @@ header, main, footer {
     overflow: hidden;
     z-index: -1;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); }
-    #index-full-box #video-container video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      object-position: center;
-      overflow: hidden; }
   #index-full-box a {
     color: #a5907e; }
 
@@ -5057,5 +5053,7 @@ header, main, footer {
   .header-info-tel a {
     display: block;
     float: right; }
+  .header-info-description {
+    display: block; }
   #stuff-title-text {
     display: block; } }
