@@ -63,3 +63,15 @@ $overlay-nav-menu-bg: $smoky-black;
     color: lighten($overlay-nav-menu-toggle-color, 100%);
   }
 }
+
+// Tag menu
+#tag-menu {
+  a {
+    color: $gruello;
+    background: $smoky-black;
+    &:hover {
+      color: $smoky-black;
+      background: $gruello;
+    }
+  }
+}

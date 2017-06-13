@@ -1,6 +1,39 @@
 // Styles for stuff pages
 #stuff-title {
-	padding-bottom: 1rem;
+	position: relative;
+	padding: 3rem 0;
+}
+.stuff-title-video {
+	background: url("https://static.pexels.com/photos/66134/pexels-photo-66134.jpeg") no-repeat center;
+	background-size: cover;
+	&::before {
+		display: block;
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+		opacity: 0.5;
+		z-index: 0;
+  }
+}
+.stuff-title-photo {
+	background: url("https://static.pexels.com/photos/134469/pexels-photo-134469.jpeg") no-repeat center;
+	background-size: cover;
+	&::before {
+		display: block;
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+		opacity: 0.5;
+		z-index: 0;
+  }
 }
 #stuff-title-text {
 	display: none;
@@ -9,6 +42,14 @@
 		padding: 0px;
 		line-height: normal;
 		font-weight: 500;
+		color: white;
+		letter-spacing: 1px;
+	}
+}
+#ico-title-mobile {
+	i {
+		color: $gruello;
+		font-size: 2.5rem;
 	}
 }
 .title-mobiles {

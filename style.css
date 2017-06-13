@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100);@import url(https://fonts.googleapis.com/css?family=Comfortaa);@charset "UTF-8";
+@charset "UTF-8";
 /* Vendors */
 /**
  * Foundation for Sites by ZURB
@@ -15,6 +15,8 @@
      * 3. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1432,7 +1434,7 @@ cite {
   font-size: 0.8125rem;
   color: #8a8a8a; }
   cite:before {
-    content: "\2014   "; }
+    content: "— "; }
 
 abbr {
   border-bottom: 1px dotted #0a0a0a;
@@ -3097,13 +3099,13 @@ select {
 .pagination-previous.disabled::before {
   display: inline-block;
   margin-right: 0.5rem;
-  content: '\AB'; }
+  content: '\00ab'; }
 
 .pagination-next a::after,
 .pagination-next.disabled::after {
   display: inline-block;
   margin-left: 0.5rem;
-  content: '\BB'; }
+  content: '\00bb'; }
 
 .progress {
   height: 1rem;
@@ -4446,7 +4448,7 @@ a.thumbnail {
 /* Icons */
 @font-face {
   font-family: 'yesprod';
-  src: url(fonts/yesprod.ttf) format("truetype"), url(fonts/yesprod.woff) format("woff"), url(fonts/yesprod.svg#yesprod) format("svg");
+  src: url("./fonts/yesprod.ttf?3vml84") format("truetype"), url("./fonts/yesprod.woff?3vml84") format("woff"), url("./fonts/yesprod.svg?3vml84#yesprod") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -4464,64 +4466,64 @@ a.thumbnail {
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-video:before {
-  content: "\E900"; }
+  content: "\e900"; }
 
 .icon-movie:before {
-  content: "\E900"; }
+  content: "\e900"; }
 
 .icon-film:before {
-  content: "\E900"; }
+  content: "\e900"; }
 
 .icon-camera:before {
-  content: "\E901"; }
+  content: "\e901"; }
 
 .icon-photo:before {
-  content: "\E901"; }
+  content: "\e901"; }
 
 .icon-picture:before {
-  content: "\E901"; }
+  content: "\e901"; }
 
 .icon-image:before {
-  content: "\E901"; }
+  content: "\e901"; }
 
 .icon-library:before {
-  content: "\E902"; }
+  content: "\e902"; }
 
 .icon-university:before {
-  content: "\E902"; }
+  content: "\e902"; }
 
 .icon-phone:before {
-  content: "\E90A"; }
+  content: "\e90a"; }
 
 .icon-email:before {
-  content: "\E90B"; }
+  content: "\e90b"; }
 
 .icon-location-pin:before {
-  content: "\E90C"; }
+  content: "\e90c"; }
 
 .icon-chevron-thin-down:before {
-  content: "\E903"; }
+  content: "\e903"; }
 
 .icon-instagram-with-circle:before {
-  content: "\E904"; }
+  content: "\e904"; }
 
 .icon-youtube-with-circle:before {
-  content: "\E905"; }
+  content: "\e905"; }
 
 .icon-facebook-with-circle:before {
-  content: "\E906"; }
+  content: "\e906"; }
 
 .icon-vk-with-circle:before {
-  content: "\E907"; }
+  content: "\e907"; }
 
 .icon-plus:before {
-  content: "\E90D"; }
+  content: "\e90d"; }
 
 .icon-camera2:before {
-  content: "\E908"; }
+  content: "\e908"; }
 
 .icon-menu:before {
-  content: "\E909"; }
+  content: "\e909"; }
 
 [class^="icon-"] {
   font-size: 1.5rem;
@@ -4553,15 +4555,14 @@ header, main, footer {
   padding: 0rem;
   font-size: 1.5rem;
   line-height: 1.5rem; }
+  .header-info-title a p {
+    margin: 0rem; }
 
 .header-info-tel a {
   display: none;
   font-size: 1.1rem;
   line-height: 1.6rem;
   letter-spacing: 1px; }
-
-.header-info-description {
-  display: none; }
 
 #footer {
   padding: 1rem;
@@ -4591,6 +4592,7 @@ header, main, footer {
 .image-hover-wrapper {
   position: relative; }
   .image-hover-wrapper a {
+    display: inline-block;
     letter-spacing: normal;
     line-height: initial;
     margin: 0;
@@ -4612,6 +4614,8 @@ header, main, footer {
       z-index: 80;
       transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition-delay: 0.25s; }
+      .image-hover-wrapper a .image-hover-wrapper-reveal i {
+        color: #f7dad9; }
       .image-hover-wrapper a .image-hover-wrapper-reveal:hover {
         opacity: 1;
         transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -4739,6 +4743,13 @@ header, main, footer {
     transition: all 0.4s ease-in-out;
     transform: rotate(135deg);
     color: white; }
+
+#tag-menu a {
+  color: #a5907e;
+  background: #0c0c0c; }
+  #tag-menu a:hover {
+    color: #0c0c0c;
+    background: #a5907e; }
 
 #index-school-box {
   position: relative;
@@ -4894,7 +4905,38 @@ header, main, footer {
   padding-right: 0; }
 
 #stuff-title {
-  padding-bottom: 1rem; }
+  position: relative;
+  padding: 3rem 0; }
+
+.stuff-title-video {
+  background: url("https://static.pexels.com/photos/66134/pexels-photo-66134.jpeg") no-repeat center;
+  background-size: cover; }
+  .stuff-title-video::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    opacity: 0.5;
+    z-index: 0; }
+
+.stuff-title-photo {
+  background: url("https://static.pexels.com/photos/134469/pexels-photo-134469.jpeg") no-repeat center;
+  background-size: cover; }
+  .stuff-title-photo::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    opacity: 0.5;
+    z-index: 0; }
 
 #stuff-title-text {
   display: none; }
@@ -4902,7 +4944,13 @@ header, main, footer {
     margin: 0px;
     padding: 0px;
     line-height: normal;
-    font-weight: 500; }
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px; }
+
+#ico-title-mobile i {
+  color: #a5907e;
+  font-size: 2.5rem; }
 
 .title-mobiles * {
   display: block;
@@ -4961,6 +5009,9 @@ header, main, footer {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold; }
+
+.button-group.expanded {
+  margin-right: 0px; }
 
 .contact-us-section {
   padding: 2rem;
@@ -5053,7 +5104,5 @@ header, main, footer {
   .header-info-tel a {
     display: block;
     float: right; }
-  .header-info-description {
-    display: block; }
   #stuff-title-text {
     display: block; } }
