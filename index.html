@@ -61,9 +61,9 @@
       <div id="video-container">
 				<!--video/index-bg.mp4-->
 				<div class="responsive-embed widescreen">
-					<video src="video/editedVideo_12-06-2017_184557.mp4" autoplay muted="true" loop="true">
+					<!--<video src="video/editedVideo_12-06-2017_184557.mp4" autoplay muted="true" loop="true">
 						Sorry, your browser tooo old to get the content
-					</video>
+					</video>-->
 				</div>
 				<div id="noise-bg"></div>
       </div>
@@ -85,6 +85,25 @@
 
     <!--Main content of the page-->
 		<main id="index-main" data-magellan-target="index-main">
+			<!--Panoramic photo-->
+			<div id="index-panorama-section" class="row">
+				<div class="small-12 columns">
+					<!-- Image 360 -->
+					<div class="threesixty product4">
+						<div class="spinner">
+							<span>0%</span>
+						</div>
+						<ol class="threesixty_images"></ol>
+					</div>
+
+					<!--Capture-->
+					<div class="panorama-capture">
+						<p class="icon-two-fingers-rotate"></p>
+						<span>Вращать для 360<sup>&deg;</sup> просмотра</span>
+					</div>
+				</div>
+			</div>
+
 			<!-- School -->
       <div id="index-school-box" class="row services-container">
 				<div class="marketing-site-content-section">
@@ -103,12 +122,9 @@
 			<!--Services cards-->
 			<div id="services-cards" class="row expanded">
 				<div class="marketing-site-content-section">
-					<div class="marketing-site-content-section-img image-hover-wrapper">
-						<a href="works.html">
+					<div class="marketing-site-content-section-img">
+						<a href="video.html">
 							<img src="https://static.pexels.com/photos/66134/pexels-photo-66134.jpeg" alt="" />
-							<span class="image-hover-wrapper-reveal">
-								<p><i class="icon-video" aria-hidden="true"></i></p>
-							</span>
 						</a>
 					</div>
 					<div class="marketing-site-content-section-block">
@@ -119,12 +135,9 @@
 						<h3 class="marketing-site-content-section-block-header">Фото</h3>
 						<p class="marketing-site-content-section-block-subheader subheader">Photo production</p>
 					</div>
-					<div class="marketing-site-content-section-img small-order-1 medium-order-2 image-hover-wrapper">
-						<a href="works.html">
+					<div class="marketing-site-content-section-img small-order-1 medium-order-2">
+						<a href="photo.html">
 							<img src="https://static.pexels.com/photos/134469/pexels-photo-134469.jpeg" alt="" />
-							<span class="image-hover-wrapper-reveal">
-								<p><i class="icon-photo" aria-hidden="true"></i></p>
-							</span>
 						</a>
 					</div>
 				</div>
@@ -234,8 +247,28 @@
 		<script src="js/libraries/what-input.min.js"></script>
     <script src="js/libraries/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script>
-    	$(document).foundation();
-    </script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+		<script src="js/libraries/threesixty.min.js"></script>
+		<script>
+			window.onload = init;
+
+			var car;
+			function init(){
+				car = $('.product4').ThreeSixty({
+					totalFrames: 42, // Total no. of image you have for 360 slider
+					endFrame: 42, // end frame for the auto spin animation
+					currentFrame: 1, // This the start frame for auto spin
+					imgList: '.threesixty_images', // selector for image list
+					progress: '.spinner', // selector to show the loading progress
+					imagePath:'images/panorama/product4/', // path of the image assets
+					filePrefix: '', // file prefix if any
+					ext: '.jpg', // extention for the assets
+					height: 320,
+					width: 'auto',
+					navigation: true,
+					responsive: true
+				});
+			}
+		</script>
 	</body>
 </html>

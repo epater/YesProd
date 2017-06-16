@@ -4883,7 +4883,7 @@ a[class*='lightcase-icon-'] {
 /* Icons */
 @font-face {
   font-family: 'yesprod';
-  src: url("fonts/yesprod.ttf?f9qh51") format("truetype"), url("fonts/yesprod.woff?f9qh51") format("woff"), url("fonts/yesprod.svg?f9qh51#yesprod") format("svg");
+  src: url("fonts/yesprod.ttf?8hoem6") format("truetype"), url("fonts/yesprod.woff?8hoem6") format("woff"), url("fonts/yesprod.svg?8hoem6#yesprod") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -4899,6 +4899,9 @@ a[class*='lightcase-icon-'] {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-two-fingers-rotate:before {
+  content: "\e911"; }
 
 .icon-video:before {
   content: "\e900"; }
@@ -5348,6 +5351,9 @@ header, main, footer {
   padding-left: 0;
   padding-right: 0; }
 
+#index-panorama-section {
+  padding-top: 1rem; }
+
 #stuff-title {
   position: relative;
   padding: 3rem 0; }
@@ -5537,7 +5543,9 @@ header, main, footer {
     grid-auto-rows: 5rem;
     grid-gap: 0.1rem; }
   .contact-us-list i {
-    margin-right: 0.2rem; } }
+    margin-right: 0.2rem; }
+  .threesixty .nav_bar {
+    top: 0rem; } }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
@@ -5550,3 +5558,104 @@ header, main, footer {
     float: right; }
   #stuff-title-text {
     display: block; } }
+
+.threesixty {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.threesixty .threesixty_images {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.threesixty .threesixty_images img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto; }
+
+.threesixty .threesixty_images img.previous-image {
+  visibility: hidden;
+  /*
+           Do not put here any other styles.
+           It causes massive recalc / repaints and image flickering,
+           especially on Firefox.
+        */ }
+
+.threesixty .threesixty_images img.current-image {
+  visibility: visible;
+  /*
+           Do not put here any other styles.
+           It causes massive recalc / repaints and image flickering,
+           especially on Firefox.
+        */ }
+
+.threesixty .spinner {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.threesixty .spinner span {
+  font-family: Arial, "MS Trebuchet", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #FFF;
+  text-align: center;
+  line-height: 30px;
+  display: block; }
+
+.threesixty .nav_bar {
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+  z-index: 11; }
+
+.threesixty .nav_bar a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+  background: url(images/panorama/sprites.png) no-repeat;
+  text-indent: -99999px; }
+
+.threesixty .nav_bar a.nav_bar_play {
+  background-position: 0 0 !important; }
+
+.threesixty .nav_bar a.nav_bar_previous {
+  background-position: 0 -73px !important; }
+
+.threesixty .nav_bar a.nav_bar_stop {
+  background-position: 0 -37px !important; }
+
+.threesixty .nav_bar a.nav_bar_next {
+  background-position: 0 -104px !important; }
+
+/* html */
+.threesixty:-webkit-full-screen {
+  background: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px; }
+
+.threesixty:-moz-full-screen {
+  background: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px; }
+
+.panorama-capture p, .panorama-capture span {
+  display: block;
+  float: none;
+  position: relative;
+  width: 100%;
+  text-align: center; }

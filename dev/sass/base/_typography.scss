@@ -9,9 +9,9 @@
 @font-face {
   font-family: 'yesprod';
   src:
-    url('fonts/yesprod.ttf?f9qh51') format('truetype'),
-    url('fonts/yesprod.woff?f9qh51') format('woff'),
-    url('fonts/yesprod.svg?f9qh51#yesprod') format('svg');
+    url('fonts/yesprod.ttf?8hoem6') format('truetype'),
+    url('fonts/yesprod.woff?8hoem6') format('woff'),
+    url('fonts/yesprod.svg?8hoem6#yesprod') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,6 +31,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-two-fingers-rotate:before {
+  content: "\e911";
+}
 .icon-video:before {
   content: "\e900";
 }
