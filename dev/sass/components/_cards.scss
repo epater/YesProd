@@ -57,6 +57,17 @@
   color: $pastel-brown;
   width: 100%;
   text-align: center;
+  a {
+    color: $pastel-brown;
+    transition: all 0.5s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  [class^="icon-"] {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 .marketing-site-content-section-block-header {
   font-size: 1.6rem;

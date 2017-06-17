@@ -9,9 +9,9 @@
 @font-face {
   font-family: 'yesprod';
   src:
-    url('fonts/yesprod.ttf?8hoem6') format('truetype'),
-    url('fonts/yesprod.woff?8hoem6') format('woff'),
-    url('fonts/yesprod.svg?8hoem6#yesprod') format('svg');
+    url('fonts/yesprod.ttf?ii9ikh') format('truetype'),
+    url('fonts/yesprod.woff?ii9ikh') format('woff'),
+    url('fonts/yesprod.svg?ii9ikh#yesprod') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,6 +33,21 @@
 
 .icon-two-fingers-rotate:before {
   content: "\e911";
+}
+.icon-pricetags:before {
+  content: "\e912";
+}
+.icon-tags:before {
+  content: "\e912";
+}
+.icon-prices:before {
+  content: "\e912";
+}
+.icon-shop:before {
+  content: "\e912";
+}
+.icon-ecommerce:before {
+  content: "\e912";
 }
 .icon-video:before {
   content: "\e900";
