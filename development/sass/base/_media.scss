@@ -23,4 +23,11 @@
       font-size: 4rem;
     }
   }
+  .short-description {
+    padding-left: 1rem;
+    border-left: 5px solid $primary-color;
+  }
+  .play-video {
+    float: right;
+  }
 }

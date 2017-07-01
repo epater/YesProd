@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!--Title-->
-		<title></title>
+		<title>YesVideo</title>
 
     <!--SEO-->
 		<meta name="description" content="">
@@ -21,14 +21,17 @@
 		<!--Video BG-->
 		<div id="video-bg-container">
 			<!--Video Background-->
-			<video src="film-loop.mp4" autoplay loop muted></video>
+			<div class="hide-for-large index-alt-video-pic"></div>
+			<video class="show-for-large" src="film-loop.mp4" autoplay loop muted></video>
 
 			<!--Header-->
 			<header>
 				<div id="header-box" class="row large-collapse">
 					<!--Title-->
 					<div class="small-6 columns">
-						<h1>Yes<span>Video</span></h1>
+						<h1>
+						<a href="index.html">Yes<span>Video</span></a>
+					</h1>
 					</div>
 
 					<!--Top menu-->
@@ -66,20 +69,20 @@
 			</header>
 
 			<!--Title Description-->
-			<div id="index-title-description" class="row large-collapse short-title-description short-description">
-				<!--<div class="">-->
-					<div class="small-12 large-7 columns">
+			<div id="index-title-description-container">
+				<div id="index-title-description" class="row large-collapse short-title-description short-description">
+					<div class="small-12 large-7 columns align-self-bottom">
 						<h2>Video <br>Production</h2>
 					</div>
-					<div class="small-12 large-5 columns">
-						<a class="play-video" href="">PLAY SHOWREEL</a>
+					<div class="small-12 large-5 columns align-self-bottom">
+						<a class="play-video" href="#" data-open="index-reviel-video"><span class="mark"><i class="icofont icofont-play"></i> PLAY</span> SHOWREEL</a>
 					</div>
-				<!--</div>-->
+				</div>
 			</div>
 		</div>
 
 		<!--Short Description-->
-		<div class="row large-collapse short-description">
+		<div class="row large-collapse short-description short-description-pad">
 			<div class="small-10 large-5 columns evoke-text">
 				<p class="evoke-text">We produce impressive videos that are tailored to your target groups and transport your messages optimally.</p>
 			</div>
@@ -92,12 +95,22 @@
 				<!--School section-->
 				<div class="row large-collapse align-middle">
 					<div class="small-12 large-6 columns">
-						<img src="images/pexels-photo-201889.jpeg" alt="">
+						<a href="http://yesvideo.com.ua/school/">
+							<img src="images/pexels-photo-201889.jpeg" alt="">
+						</a>
 					</div>
 					<div class="small-12 large-6 columns">
 						<section class="services-index-text">
-							<h3>Школа</h3>
-							<p class="evoke-text">In order to tailor the right concept for your video production, we first have to record your market position and the related company objectives. In the next step, we plan the first guiding principles and visualize them in the form of storyboards for you.</p>
+							<h3>
+								<a href="http://yesvideo.com.ua/school/">ШКОЛА ПРАКТИЧЕСКОЙ ВИДЕОСЪЕМКИ</a>
+							</h3>
+							<p class="evoke-text">Школа Практической Видеосъемки YesVideo_School 
+								cоздана для людей, которые хотят:<br> 
+								- работать в киноиндустрии <br>
+								- вести крутые блоги <br>
+								- наполнять свой канал в ютубе качественным видео <br>
+								- превратить съемки своих путешествий в захватывающие ролики <br>
+								- воплотить другие творческие идеи</p>
 						</section>
 					</div>
 				</div>
@@ -106,23 +119,29 @@
 				<div class="row large-collapse align-middle">
 					<div class="small-12 small-push-12 large-6 columns">
 						<section  class="services-index-text">
-							<h3>Видео</h3>
+							<h3>
+								<a href="video.html">Видео</a>
+							</h3>
 							<p class="evoke-text">In order to tailor the right concept for your video production, we first have to record your market position and the related company objectives. In the next step, we plan the first guiding principles and visualize them in the form of storyboards for you.</p>
 						</section>
 					</div>
 					<div class="small-12 small-pull-12 large-6 columns">
-						<img src="images/pexels-photo-66134.jpeg" alt="">
+						<a href="video.html"><img src="images/pexels-photo-66134.jpeg" alt=""></a>
 					</div>
 				</div>
 
 				<!--Photo section-->
 				<div class="row large-collapse align-middle">
 					<div class="small-12 large-6 columns">
-						<img src="images/pexels-photo-134469.jpeg" alt="">
+						<a href="photo.html">
+							<img src="images/pexels-photo-134469.jpeg" alt="">
+						</a>
 					</div>
 					<div class="small-12 large-6 columns">
 						<section  class="services-index-text">
-							<h3>Фото</h3>
+							<h3>
+								<a href="photo.html">Фото</a>
+							</h3>
 							<p class="evoke-text">In order to tailor the right concept for your video production, we first have to record your market position and the related company objectives. In the next step, we plan the first guiding principles and visualize them in the form of storyboards for you.</p>
 						</section>
 					</div>
@@ -134,7 +153,7 @@
 		<footer>
 			<div id="footer" class="row large-collapse">
 				<!-- Social Links -->
-				<div class="row">
+				<!-- <div class="row">
 					<div class="small-5 small-centered columns">
 						<ul class="menu expanded">
 						  <li><a href="#">One</a></li>
@@ -143,7 +162,7 @@
 						  <li><a href="#">Four</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Footer menu -->
 				<div class="row">
@@ -173,9 +192,12 @@
 			</div>
 		</footer>
 
-<!-- 		<div class="row large-collapse">
-			<div class="small- columns"></div>
-		</div> -->
+		<div class="full reveal" id="index-reviel-video" data-reveal>
+		  <iframe src="https://www.youtube.com/embed/n_YQzMTJayE" frameborder="0" allowfullscreen></iframe>
+		  <button class="close-button" data-close aria-label="Close modal" type="button">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
     
     <!--JS Scripts-->
     <script src="bower_components/jquery/dist/jquery.js"></script>

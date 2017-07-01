@@ -7,6 +7,9 @@
     margin: 0;
     line-height: 1rem;
     font-weight: 600;
+    a {
+      color: $primary-color;
+    }
     span {
       color: $white;
       font-size: 85%;

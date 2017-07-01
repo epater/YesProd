@@ -1,14 +1,11 @@
 // Title description
 #index-title-description {
   h2 {
+    margin: 0px;
     line-height: 1;
     font-size: 2rem;
     font-weight: 900;
   }
-}
-
-.play-video {
-  float: right;
 }
 
 // Short description
@@ -19,13 +16,13 @@
   // bottom: 0rem;
 }
 .short-description {
-  padding-top: 2rem;
-  padding-left: 1rem;
-  border-left: 5px solid $primary-color;
   p {
     margin: 0px;
     padding: 0px;
   }
+}
+.short-description-pad {
+  padding-top: 2rem;
 }
 
 // Services sections
@@ -36,5 +33,42 @@
     float: none;
     width: 80%;
     margin: auto;
+    a {
+      color: $primary-color;
+      font-weight: 700;
+    }
   }
+}
+
+#index-title-description-container {
+  position: absolute;
+  float: none;
+  width: 100%;
+  bottom: 0px;
+  clear: both;
+}
+
+// Moda video reveal
+#index-reviel-video {
+  background: $black;
+  iframe {
+    display: block;
+    position: relative;
+    float: none;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+  }
+  .close-button {
+    color: $white;
+  }
+}
+
+.index-alt-video-pic {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background: url("images/pexels-photo-257904.jpeg");
+  background-position: center;
+  background-size: cover;
 }
