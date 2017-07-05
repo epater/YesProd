@@ -4,6 +4,7 @@
 @import "base/typography";
 // @import "base/";
 // @import "base/";
+// @import "base/";
 
 @import 'settings';
 @import 'foundation';
@@ -55,6 +56,12 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// Enable flex
+@include foundation-everything($flex: true);
+
+// Base
+@import "base/variables";
+
 // Layout
 @import "layout/header";
 @import "layout/spare";
@@ -66,6 +73,8 @@
 @import "components/video-bg";
 @import "components/lightcase/lightcase";
 @import "components/services";
+@import "components/hover";
+// @import "components/";
 // @import "components/";
 
 // Pages

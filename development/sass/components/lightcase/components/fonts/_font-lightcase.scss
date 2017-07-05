@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'lightcase';
   src:
-    url('#{map-get($lightcase-settings, font-path)}yesprod.ttf?f9qh51') format('truetype'),
-    url('#{map-get($lightcase-settings, font-path)}yesprod.woff?f9qh51') format('woff'),
-    url('#{map-get($lightcase-settings, font-path)}yesprod.svg?f9qh51#yesprod') format('svg');
+    url('#{map-get($lightcase-settings, font-path)}icofont.eot?v=1.0.0-beta'),
+    url('#{map-get($lightcase-settings, font-path)}icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'),
+    url('#{map-get($lightcase-settings, font-path)}icofont.ttf?v=1.0.0-beta') format('truetype'),
+    url('#{map-get($lightcase-settings, font-path)}icofont.woff?v=1.0.0-beta') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +31,13 @@
 /* Codes */
 // .lightcase-icon-play:before { content: '\e800'; }
 // .lightcase-icon-pause:before { content: '\e801'; }
-.lightcase-icon-close:before { content: "\e910"; }
-.lightcase-icon-prev:before { content: "\e90f"; }
-.lightcase-icon-next:before { content: "\e90e"; }
+.lightcase-icon-close:before {
+  content: "\efb8";
+}
+.lightcase-icon-prev:before {
+  content: "\eb1a";
+}
+.lightcase-icon-next:before {
+  content: "\eb1b";
+}
 // .lightcase-icon-spin:before { content: '\e805'; }

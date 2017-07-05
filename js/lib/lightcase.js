@@ -69,7 +69,7 @@
 				shrinkFactor: .75,
 				overlayOpacity: .9,
 				slideshow: false,
-				slideshowAutoStart: true,
+				slideshowAutoStart: false,
 				timeout: 5000,
 				swipe: true,
 				useKeys: true,
