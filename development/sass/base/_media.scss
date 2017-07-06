@@ -8,15 +8,38 @@
 
 // @media (max-width: ) {}
 @media (min-width: 1024px) {
+  .evoke-text {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
   // Header
   #header-box {
     padding: 3rem 0;
-  }
-  #top-menu {
-    ul {
-      float: right;
+
+    // Title
+    #title-box {
+      padding-bottom: 0rem;
+    }
+
+    // Menu
+    #top-menu {
+      padding: 0;
+      ul {
+        float: right;
+      }
+    }
+    .top-menu-box {
+      background: none;
+    }
+    .menu > li > a {
+      padding: 0px 1rem;
+    }
+    .menu > li:last-child > a {
+      padding: 0;
     }
   }
+
   // Title description
   #index-title-description {
     h2 {
@@ -29,5 +52,10 @@
   }
   .play-video {
     float: right;
+  }
+
+  // Services sections
+  .services-index-sections {
+    margin-bottom: 0rem;
   }
 }

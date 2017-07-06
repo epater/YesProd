@@ -1,8 +1,11 @@
 #header-box {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0 0;
   border-bottom: 1px solid $medium-gray;
 
   // Title
+  #title-box {
+    padding-bottom: 1.5rem;
+  }
   h1 {
     margin: 0;
     line-height: 1rem;
@@ -16,19 +19,29 @@
     }
   }
 
+  // Top menu
+  .top-menu-box {
+    background: rgba(25, 25, 25, 0.9);
+    z-index: 1000;
+  }
+  #top-menu {
+    padding: 1.5rem 0;
+  }
+
   // Menu ico
   #top-menu-ico-box {
     float: right;
     line-height: 1rem;
+    font-size: 1.5rem;
+    button {
+      color: $white;
+    }
   }
 
   // Menu
   .menu > li > a {
-    padding: 0px 1rem;
+    padding: 0.7rem 0;
     text-transform: uppercase;
     font-size: 1rem;
-  }
-  .menu > li:last-child > a {
-    padding: 0;
   }
 }

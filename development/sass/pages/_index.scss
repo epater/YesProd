@@ -26,6 +26,9 @@
 }
 
 // Services sections
+.services-index-sections {
+  margin-bottom: 2rem;
+}
 #services-index-box {
   padding: 3rem 0px;
   .services-index-text {
@@ -71,4 +74,16 @@
   background: url("images/pexels-photo-257904.jpeg");
   background-position: center;
   background-size: cover;
+}
+
+// Video section order
+#index-video-sec {
+  display: flex;
+  flex-direction: column;
+}
+.vid-flex-item:nth-of-type(1) {
+  order: 2;
+}
+.vid-flex-item:nth-of-type(2) {
+  order: 1;
 }
