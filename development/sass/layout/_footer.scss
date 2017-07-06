@@ -2,7 +2,11 @@
 #footer {
 	padding: 3rem 0;
   border-top: 1px solid $medium-gray;
-  li {
+}
+#mobile-menu-vertical-centered {
+	li, a {
+		display: block;
+		position: relative;
   	float: none;
   	text-align: center;
   }
