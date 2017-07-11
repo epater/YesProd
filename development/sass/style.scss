@@ -74,12 +74,13 @@
 @import "components/lightcase/lightcase";
 @import "components/services";
 @import "components/hover";
-// @import "components/";
+@import "components/map";
 // @import "components/";
 
 // Pages
 @import "pages/index";
 @import "pages/price";
+@import "pages/about";
 
 // Media
 @import "base/media";
