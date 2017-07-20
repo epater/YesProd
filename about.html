@@ -1,121 +1,46 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="ru">
 	<head>
+    <!--Util-->
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>О нас | YesVideo Production</title>
-    <!-- SEO meta -->
+
+    <!--Title-->
+		<title>О нас | YesVideo</title>
+
+    <!--SEO-->
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="">
-    <!-- Stylesheets -->
-		<link rel="stylesheet" href="./style.css">
-		<!--To orbit-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.css">
+
+    <!--Styles-->
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
-		<!--Top menu-->
-		<div id="top-menu" class="row expanded">
-			<div class="small-12 columns">
-				<nav role="navigation">
-					<ul id="overlay-nav-menu" class="overlay-nav-menu">
-						<li>
-							<a href="index.html">Главная</a>
-						</li>
-						<li>
-							<a href="http://yesvideo.com.ua/school/">Школа</a>
-						</li>
-						<li>
-							<a href="video.html">Видео</a>
-						</li>
-						<li>
-							<a href="photo.html">Фото</a>
-						</li>
-						<li>
-							<a href="price.html">Цены</a>
-						</li>
-						<li>
-							<a href="about.html">О нас</a>
-						</li>
-					</ul>
-					<!--Ico-->
-					<a data-toggle-menu class="overlay-nav-menu-toggle" href="#top-menu"><i class="icon-plus"></i></a>
-				</nav>
-			</div>
-		</div>
-
 		<!--Header-->
-		<header id="header">
-			<div class="row expanded">
-				<div class="small-12 medium-6 columns header-info header-info-title">
-					<a href="index.html">
-						yESvideo <small>Production</small>
-					</a>
-				</div>
-				<div class="small-12 medium-6 columns header-info header-info-tel">
-					<a href="tel:+380994485654">099 448 56 54</a>
-				</div>
-			</div>
-		</header>
-
-    <!--Main content of the page-->
-		<main>
-			<div class="row">
-				<div class="small-12 columns">
-					<section class="contact-us-section">
-						<div class="row medium-unstack">
-							<div class="columns contact-us-section-left">
-								<h3 class="contact-us-header">Найти нас</h3>
-								<div class="responsive-embed">
-									<img src="http://maps.googleapis.com/maps/api/staticmap?center=campbell&zoom=13&scale=false&size=600x300&maptype=roadmap&sensor=false&format=png&visual_refresh=true" alt="Google Map of campbell" alt="" />
-								</div>
-
-								<ul class="contact-us-list">
-									<li>
-										<i class="icon-location-pin"></i>Днепр, ул. Чичерина 21, Офис 509
-									</li>
-									<li>
-										<i class="icon-email"></i>
-										<a href="mailto:">yesvideo@gmail.com</a>
-									</li>
-									<li>
-										<i class="icon-phone"></i>
-										+38 (099) 448 5654
-									</li>
-								</ul>
-							</div>
-							<div class="columns contact-us-section-right">
-								<h3 class="contact-us-header">Напишите Нам</h3>
-								<form class="contact-us-form">
-									<input type="text" placeholder="Полное имя">
-									<input type="email" placeholder="Email">
-									<textarea name="message" id="" rows="12" placeholder="Введите ваше сообщение"></textarea>
-									<div class="contact-us-form-actions">
-										<input type="submit" class="button" value="Отправить">
-									</div>
-								</form>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</main>
-
-		<!--Footer-->
-		<footer id="footer">
-			<div class="row">
-				<!--Footer company title-->
-				<div id="company-footer-title" class="small-12 columns">
-					<h4>
-						<a href="index.html">yESvideo Production</a>
-					</h4>
+		<header>
+			<div id="header-box" class="row large-collapse">
+				<!--Title-->
+				<div id="title-box" class="small-9 large-4 columns">
+					<h1>
+						<a href="index.html">Yes<span>Video</span></a>
+					</h1>
 				</div>
 
-				<!--Footer open menu-->
-				<div id="footer-open-menu" class="small-12 columns">
-					<div class="menu-centered">
-						<ul class="vertical medium-horizontal menu">
+				<!--ICO-->
+				<div class="small-3 columns hide-for-large">
+					<div id="top-menu-ico-box" data-responsive-toggle="top-menu" data-hide-for="large">
+					<!-- menu-icon -->
+						<button class="icofont icofont-navigation-menu" type="button" data-toggle="top-menu"></button>
+					</div>
+				</div>
+
+				<!--Top menu-->
+				<div class="small-12 large-8 columns small-collapse top-menu-box">
+					<!--Menu-->
+					<div id="top-menu">
+						<ul class="menu vertical large-horizontal align-right">
 							<li>
 								<a href="index.html">Главная</a>
 							</li>
@@ -137,73 +62,93 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+		</header>
 
-				<!--Social footer links-->
-				<div id="social-footer-links" class="small-12 columns">
-					<div class="menu-centered">
-						<ul class="menu">
-							<li>
-								<a class="icon-vk-with-circle" href="https://vk.com/silezkiy"></a>
-							</li>
-							<li>
-								<a class="icon-facebook-with-circle" href="https://www.facebook.com/silezkiy"></a>
-							</li>
-							<li>
-								<a class="icon-youtube-with-circle" href="https://www.youtube.com/channel/UC6fTkcbeqYN_6wCD2gKjTuw"></a>
-							</li>
-							<li>
-								<a class="icon-instagram-with-circle" href="https://www.instagram.com/silezkyi/"></a>
-							</li>
-						</ul>
-					</div>
+		<!--Main-->
+		<main>
+			<!-- Google Map -->
+			<div class="row large-collapse">
+				<div class="small-12 columns">
+					<div id="map"></div>
+				</div>
+			</div>
+
+			<!-- Contacts -->
+			<div id="txt-contacts" class="row large-collapse">
+				<div class="small-12 columns">
+					<article>
+						<div class="txt-contacts-boxes">
+							<h4>YesVideo</h4>
+							<p>Днепр, ул. Чичерина 21, Офис 509</p>
+						</div>
+						<div class="txt-contacts-boxes">
+							<a href="mailto:yesvideo@gmail.com">yesvideo@gmail.com</a>
+							<a href="tel:+380994485654">+38 (099) 448 5654</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</main>
+
+		<!--Footer-->
+		<footer>
+			<div id="footer" class="row collapse">
+				<!-- Social Links -->
+				<div id="footer-social-links" class="small-12 columns">
+					<ul class="menu align-center">
+					  <li><a class="icofont icofont-social-facebook fb-color" href="https://www.facebook.com/silezkiy" target="_blank"></a></li>
+					  <li><a class="icofont icofont-social-instagram instagram-color" href="https://www.instagram.com/silezkyi/" target="_blank"></a></li>
+					  <li><a class="icofont icofont-youtube-play youtube-color" href="https://www.youtube.com/channel/UC6fTkcbeqYN_6wCD2gKjTuw" target="_blank"></a></li>
+					  <li><a class="icofont icofont-social-vk vk-color" href="https://vk.com/silezkiy" target="_blank"></a></li>
+					</ul>
 				</div>
 
-				<!--Copyright-->
-				<div id="footer-copyright" class="small-12 columns">
-					<small>Crafted with <b>&hearts;</b> <a href="http://zuiker.github.io/AlexFedorov/portfolio.html">Alex Fedorov</a></small>
+				<!-- Footer menu -->
+				<div id="mobile-menu-vertical-centered" class="small-12 columns">
+					<ul class="vertical menu align-center large-horizontal">
+					  <li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="http://yesvideo.com.ua/school/">Школа</a>
+						</li>
+						<li>
+							<a href="video.html">Видео</a>
+						</li>
+						<li>
+							<a href="photo.html">Фото</a>
+						</li>
+						<li>
+							<a href="price.html">Цены</a>
+						</li>
+						<li>
+							<a href="about.html">О нас</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</footer>
-		
-		<!--Side panels-->
-		<!--Left-side panel-->
-		<div class="left-side side-panel">
-			<!-- Service side title -->
-      <div id="service-side-title">
-        <span>Фото</span>
-        <span>Видео</span>
-      </div>
-		</div>
-
-		<!--Right-side panel-->
-		<div class="right-side side-panel">
-			<!-- Language switcher -->
-			<!-- <div id="lang-menu">
-				<a href="#">ru</a>
-				<span>/</span>
-				<a href="#">en</a>
-			</div> -->
-			<!-- Social links -->
-			<ul class="vertical menu">
-				<li>
-					<a class="icon-vk-with-circle" href="https://vk.com/silezkiy"></a>
-				</li>
-				<li>
-					<a class="icon-facebook-with-circle" href="https://www.facebook.com/silezkiy"></a>
-				</li>
-				<li>
-					<a class="icon-youtube-with-circle" href="https://www.youtube.com/channel/UC6fTkcbeqYN_6wCD2gKjTuw"></a>
-				</li>
-				<li>
-					<a class="icon-instagram-with-circle" href="https://www.instagram.com/silezkyi/"></a>
-				</li>
-			</ul>
-		</div>
-
-		<!-- JavaScripts -->
-    <script src="js/libraries/jquery.min.js"></script>
-		<script src="js/libraries/what-input.min.js"></script>
-    <script src="js/libraries/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    
+    <!--JS Scripts-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/what-input.min.js"></script>
+    <script src="js/lib/foundation.min.js"></script>
+    <script src="js/lib/scrollreveal.min.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+      function initMap() {
+        var uluru = {lat: 48.4672899, lng: 35.0153357};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYIiuXGubGKVSdnGSqInaIqJWYu4hDF5c&callback=initMap"></script>
 	</body>
 </html>

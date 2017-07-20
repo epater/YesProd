@@ -1,26 +1,174 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="ru">
 	<head>
+    <!--Util-->
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>YesVideo Production</title>
-    <!-- SEO meta -->
+
+    <!--Title-->
+		<title>YesVideo</title>
+
+    <!--SEO-->
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="">
-    <!-- Stylesheets -->
-		<link rel="stylesheet" href="./style.css">
-		<!--To orbit-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.css">
+
+    <!--Styles-->
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
-		<!--Top menu-->
-		<div id="top-menu" class="row expanded">
-			<div class="small-12 columns">
-				<nav role="navigation">
-					<ul id="overlay-nav-menu" class="overlay-nav-menu">
-						<li>
+		<!--Video BG-->
+		<div id="video-bg-container">
+			<!--Video Background-->
+			<div class="hide-for-large index-alt-video-pic"></div>
+			<video class="show-for-large" src="showreel.mp4" autoplay loop muted></video>
+
+			<!--Header-->
+			<header>
+				<div id="header-box" class="row large-collapse">
+					<!--Title-->
+					<div id="title-box" class="small-9 large-4 columns">
+						<h1>
+							<a href="index.html">Yes<span>Video</span></a>
+						</h1>
+					</div>
+
+					<!--ICO-->
+					<div class="small-3 columns hide-for-large">
+						<div id="top-menu-ico-box" data-responsive-toggle="top-menu" data-hide-for="large">
+						<!-- menu-icon -->
+							<button class="icofont icofont-navigation-menu" type="button" data-toggle="top-menu"></button>
+						</div>
+					</div>
+
+					<!--Top menu-->
+					<div class="small-12 large-8 columns small-collapse top-menu-box">
+						<!--Menu-->
+						<div id="top-menu">
+							<ul class="menu vertical large-horizontal align-right">
+								<li>
+									<a href="index.html">Главная</a>
+								</li>
+								<li>
+									<a href="http://yesvideo.com.ua/school/">Школа</a>
+								</li>
+								<li>
+									<a href="video.html">Видео</a>
+								</li>
+								<li>
+									<a href="photo.html">Фото</a>
+								</li>
+								<li>
+									<a href="price.html">Цены</a>
+								</li>
+								<li>
+									<a href="about.html">О нас</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!--Title Description-->
+			<div id="index-title-description-container">
+				<div id="index-title-description" class="row large-collapse short-title-description short-description">
+					<div class="small-12 large-7 columns align-self-bottom">
+						<h2>Video <br>Production</h2>
+					</div>
+					<div class="small-12 large-5 columns align-self-bottom">
+						<a class="play-video" href="#" data-open="index-reviel-video"><span class="mark"><i class="icofont icofont-play"></i> PLAY</span> SHOWREEL</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Short Description-->
+		<div class="row large-collapse short-description short-description-pad">
+			<div class="small-10 large-5 columns evoke-text">
+				<p class="evoke-text">We produce impressive videos that are tailored to your target groups and transport your messages optimally.</p>
+			</div>
+		</div>
+
+		<!--Main-->
+		<main>
+			<!--Services Sections-->
+			<div id="services-index-box">
+				<!--School section-->
+				<div class="row large-collapse align-middle services-index-sections">
+					<div class="small-12 large-6 columns img-sec-anim">
+						<a href="http://yesvideo.com.ua/school/">
+							<img src="images/pexels-photo-201889.jpeg" alt="">
+						</a>
+					</div>
+					<div class="small-12 large-6 columns txt-sec-anim">
+						<section class="services-index-text">
+							<h3>
+								<a href="http://yesvideo.com.ua/school/">ШКОЛА ПРАКТИЧЕСКОЙ ВИДЕОСЪЕМКИ</a>
+							</h3>
+							<p class="evoke-text">Школа Практической Видеосъемки YesVideo_School 
+								cоздана для людей, которые хотят:<br> 
+								- работать в киноиндустрии <br>
+								- вести крутые блоги <br>
+								- наполнять свой канал в ютубе качественным видео <br>
+								- превратить съемки своих путешествий в захватывающие ролики <br>
+								- воплотить другие творческие идеи</p>
+						</section>
+					</div>
+				</div>
+
+				<!--Video section-->
+				<div id="index-video-sec" class="row large-collapse align-middle services-index-sections">
+					<div class="small-12 small-push-12 large-6 columns vid-flex-item txt-sec-anim">
+						<section  class="services-index-text">
+							<h3>
+								<a href="video.html">Видео</a>
+							</h3>
+							<p class="evoke-text">In order to tailor the right concept for your video production, we first have to record your market position and the related company objectives. In the next step, we plan the first guiding principles and visualize them in the form of storyboards for you.</p>
+						</section>
+					</div>
+					<div class="small-12 small-pull-12 large-6 columns vid-flex-item img-sec-anim">
+						<a href="video.html"><img src="images/pexels-photo-66134.jpeg" alt=""></a>
+					</div>
+				</div>
+
+				<!--Photo section-->
+				<div class="row large-collapse align-middle services-index-sections">
+					<div class="small-12 large-6 columns img-sec-anim">
+						<a href="photo.html">
+							<img src="images/pexels-photo-134469.jpeg" alt="">
+						</a>
+					</div>
+					<div class="small-12 large-6 columns txt-sec-anim">
+						<section  class="services-index-text">
+							<h3>
+								<a href="photo.html">Фото</a>
+							</h3>
+							<p class="evoke-text">In order to tailor the right concept for your video production, we first have to record your market position and the related company objectives. In the next step, we plan the first guiding principles and visualize them in the form of storyboards for you.</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!--Footer-->
+		<footer>
+			<div id="footer" class="row collapse">
+				<!-- Social Links -->
+				<div id="footer-social-links" class="small-12 columns">
+					<ul class="menu align-center">
+					  <li><a class="icofont icofont-social-facebook fb-color" href="https://www.facebook.com/silezkiy" target="_blank"></a></li>
+					  <li><a class="icofont icofont-social-instagram instagram-color" href="https://www.instagram.com/silezkyi/" target="_blank"></a></li>
+					  <li><a class="icofont icofont-youtube-play youtube-color" href="https://www.youtube.com/channel/UC6fTkcbeqYN_6wCD2gKjTuw" target="_blank"></a></li>
+					  <li><a class="icofont icofont-social-vk vk-color" href="https://vk.com/silezkiy" target="_blank"></a></li>
+					</ul>
+				</div>
+
+				<!-- Footer menu -->
+				<div id="mobile-menu-vertical-centered" class="small-12 columns">
+					<ul class="vertical menu align-center large-horizontal">
+					  <li>
 							<a href="index.html">Главная</a>
 						</li>
 						<li>
@@ -39,236 +187,22 @@
 							<a href="about.html">О нас</a>
 						</li>
 					</ul>
-					<!--Ico-->
-					<a data-toggle-menu class="overlay-nav-menu-toggle" href="#top-menu"><i class="icon-plus"></i></a>
-				</nav>
-			</div>
-		</div>
-
-		<!--Header-->
-		<header id="header">
-			<div class="row expanded">
-				<div class="small-12 medium-6 columns header-info header-info-title"></div>
-				<div class="small-12 medium-6 columns header-info header-info-tel">
-					<a href="tel:+380994485654">099 448 56 54</a>
-				</div>
-			</div>
-		</header>
-
-		<!-- Index top full space -->
-    <div id="index-full-box">
-      <!-- Video elem -->
-      <div id="video-container">
-				<video src="video/editedVideo_12-06-2017_184557.mp4" autoplay muted="true" loop="true">
-					Sorry, your browser tooo old to get the content
-				</video>
-      </div>
-
-      <!-- Title -->
-      <div id="index-title">
-        <h1>
-          [<span>yES</span><br>
-          <span>video</span>]
-        </h1>
-      </div>
-
-      <div id="index-arrow-down" data-magellan>
-        <a href="#index-main">
-          <i class="icon-chevron-thin-down"></i>
-        </a>
-      </div>
-    </div>
-
-    <!--Main content of the page-->
-		<main id="index-main" data-magellan-target="index-main">
-			<!--Panoramic photo-->
-			<div id="index-panorama-section" class="row">
-				<div class="small-12 columns">
-					<!-- Image 360 -->
-					<div class="threesixty product4">
-						<div class="spinner">
-							<span>0%</span>
-						</div>
-						<ol class="threesixty_images"></ol>
-					</div>
-
-					<!--Capture-->
-					<div class="panorama-capture">
-						<p class="icon-two-fingers-rotate"></p>
-						<span>Вращать для 360<sup>&deg;</sup> просмотра</span>
-					</div>
-				</div>
-			</div>
-
-			<!-- School -->
-      <div id="index-school-box" class="row services-container">
-				<div class="marketing-site-content-section">
-					<div class="marketing-site-content-section-img">
-						<a href="http://yesvideo.com.ua/school/">
-							<img src="images/rckOWqCUm6I.jpg" alt="" />
-						</a>
-					</div>
-					<div class="marketing-site-content-section-block">
-						<h3 class="marketing-site-content-section-block-header">Кино Школа</h3>
-						<p class="marketing-site-content-section-block-subheader subheader">Yes Video School</p>
-					</div>
-				</div>
-      </div>
-
-			<!--Services cards-->
-			<div id="services-cards" class="row expanded">
-				<div class="marketing-site-content-section">
-					<div class="marketing-site-content-section-img">
-						<a href="video.html">
-							<img src="https://static.pexels.com/photos/66134/pexels-photo-66134.jpeg">
-						</a>
-					</div>
-					<div class="marketing-site-content-section-block">
-						<h3 class="marketing-site-content-section-block-header">
-							<a href="video.html"><p class="icon-video"></p>Видео</a>
-						</h3>
-						<p class="marketing-site-content-section-block-subheader subheader">Video production</p>
-					</div>
-					<div class="marketing-site-content-section-block small-order-2 medium-order-1">
-						<h3 class="marketing-site-content-section-block-header">
-							<a href="photo.html"><p class="icon-photo"></p>Фото</a>
-						</h3>
-						<p class="marketing-site-content-section-block-subheader subheader">Photo production</p>
-					</div>
-					<div class="marketing-site-content-section-img small-order-1 medium-order-2">
-						<a href="photo.html">
-							<img src="https://static.pexels.com/photos/134469/pexels-photo-134469.jpeg">
-						</a>
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<!--Footer-->
-		<footer id="footer">
-			<div class="row">
-				<!--Footer company title-->
-				<div id="company-footer-title" class="small-12 columns">
-					<h4>
-						<a href="index.html">yESvideo Production</a>
-					</h4>
-				</div>
-
-				<!--Footer open menu-->
-				<div id="footer-open-menu" class="small-12 columns">
-					<div class="menu-centered">
-						<ul class="vertical medium-horizontal menu">
-							<li>
-								<a href="index.html">Главная</a>
-							</li>
-							<li>
-								<a href="http://yesvideo.com.ua/school/">Школа</a>
-							</li>
-							<li>
-								<a href="video.html">Видео</a>
-							</li>
-							<li>
-								<a href="photo.html">Фото</a>
-							</li>
-							<li>
-								<a href="price.html">Цены</a>
-							</li>
-							<li>
-								<a href="about.html">О нас</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!--Social footer links-->
-				<div id="social-footer-links" class="small-12 columns">
-					<div class="menu-centered">
-						<ul class="menu">
-							<li>
-								<a class="icon-vk-with-circle" href="https://vk.com/silezkiy"></a>
-							</li>
-							<li>
-								<a class="icon-facebook-with-circle" href="https://www.facebook.com/silezkiy"></a>
-							</li>
-							<li>
-								<a class="icon-youtube-with-circle" href="https://www.youtube.com/channel/UC6fTkcbeqYN_6wCD2gKjTuw"></a>
-							</li>
-							<li>
-								<a class="icon-instagram-with-circle" href="https://www.instagram.com/silezkyi/"></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!--Copyright-->
-				<div id="footer-copyright" class="small-12 columns">
-					<small>Crafted with <b>&hearts;</b> <a href="http://zuiker.github.io/AlexFedorov/portfolio.html">Alex Fedorov</a></small>
 				</div>
 			</div>
 		</footer>
-		
-		<!--Side panels-->
-		<!--Left-side panel-->
-		<div class="left-side side-panel">
-			<!-- Service side title -->
-      <div id="service-side-title">
-        <span>Фото</span>
-        <span>Видео</span>
-      </div>
+
+		<div class="full reveal" id="index-reviel-video" data-reveal>
+		  <iframe src="https://www.youtube.com/embed/n_YQzMTJayE" frameborder="0" allowfullscreen></iframe>
+		  <button class="close-button" data-close aria-label="Close modal" type="button">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
 		</div>
-
-		<!--Right-side panel-->
-		<div class="right-side side-panel">
-			<!-- Language switcher -->
-			<!-- <div id="lang-menu">
-				<a href="#">ru</a>
-				<span>/</span>
-				<a href="#">en</a>
-			</div> -->
-			<!-- Social links -->
-			<ul class="vertical menu">
-				<li>
-					<a class="icon-vk-with-circle" href="https://vk.com/silezkiy"></a>
-				</li>
-				<li>
-					<a class="icon-facebook-with-circle" href="https://www.facebook.com/silezkiy"></a>
-				</li>
-				<li>
-					<a class="icon-youtube-with-circle" href="https://www.youtube.com/channel/UC6fTkcbeqYN_6wCD2gKjTuw"></a>
-				</li>
-				<li>
-					<a class="icon-instagram-with-circle" href="https://www.instagram.com/silezkyi/"></a>
-				</li>
-			</ul>
-		</div>
-
-		<!-- JavaScripts -->
-    <script src="js/libraries/jquery.min.js"></script>
-		<script src="js/libraries/what-input.min.js"></script>
-    <script src="js/libraries/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
-		<script src="js/libraries/threesixty.min.js"></script>
-		<script>
-			window.onload = init;
-
-			var car;
-			function init(){
-				car = $('.product4').ThreeSixty({
-					totalFrames: 42, // Total no. of image you have for 360 slider
-					endFrame: 42, // end frame for the auto spin animation
-					currentFrame: 1, // This the start frame for auto spin
-					imgList: '.threesixty_images', // selector for image list
-					progress: '.spinner', // selector to show the loading progress
-					imagePath:'images/panorama/product4/', // path of the image assets
-					filePrefix: '', // file prefix if any
-					ext: '.jpg', // extention for the assets
-					height: 320,
-					width: 'auto',
-					navigation: true,
-					responsive: true
-				});
-			}
-		</script>
+    
+    <!--JS Scripts-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/what-input.min.js"></script>
+    <script src="js/lib/foundation.min.js"></script>
+    <script src="js/lib/scrollreveal.min.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'lightcase';
+  src:
+    url('#{map-get($lightcase-settings, font-path)}icofont.eot?v=1.0.0-beta'),
+    url('#{map-get($lightcase-settings, font-path)}icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'),
+    url('#{map-get($lightcase-settings, font-path)}icofont.ttf?v=1.0.0-beta') format('truetype'),
+    url('#{map-get($lightcase-settings, font-path)}icofont.woff?v=1.0.0-beta') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='lightcase-icon-']:before {
+  font-family: 'lightcase', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+}
+
+/* Codes */
+// .lightcase-icon-play:before { content: '\e800'; }
+// .lightcase-icon-pause:before { content: '\e801'; }
+.lightcase-icon-close:before {
+  content: "\efb8";
+}
+.lightcase-icon-prev:before {
+  content: "\eb1a";
+}
+.lightcase-icon-next:before {
+  content: "\eb1b";
+}
+// .lightcase-icon-spin:before { content: '\e805'; }

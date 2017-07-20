@@ -1,0 +1,76 @@
+// $breakpoints: (
+//   small: 0,
+//   medium: 640px,
+//   large: 1024px,
+//   xlarge: 1200px,
+//   xxlarge: 1440px,
+// );
+
+@media (max-width: 1023px) {
+  // Video section order
+  #index-video-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  .vid-flex-item:nth-of-type(1) {
+    order: 2;
+  }
+  .vid-flex-item:nth-of-type(2) {
+    order: 1;
+  }
+  .price-item-boxes {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .evoke-text {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  // Header
+  #header-box {
+    padding: 3rem 0;
+
+    // Title
+    #title-box {
+      padding-bottom: 0rem;
+    }
+
+    // Menu
+    #top-menu {
+      padding: 0;
+      ul {
+        float: right;
+      }
+    }
+    .top-menu-box {
+      background: none;
+    }
+    .menu > li > a {
+      padding: 0px 1rem;
+    }
+    .menu > li:last-child > a {
+      padding: 0;
+    }
+  }
+
+  // Title description
+  #index-title-description {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+  .short-description {
+    padding-left: 1rem;
+    border-left: 5px solid $primary-color;
+  }
+  .play-video {
+    float: right;
+  }
+
+  // Services sections
+  .services-index-sections {
+    margin-bottom: 0rem;
+  }
+}

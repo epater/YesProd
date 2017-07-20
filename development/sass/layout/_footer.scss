@@ -1,0 +1,64 @@
+// Footer
+#footer {
+	padding: 3rem 0;
+  border-top: 1px solid $medium-gray;
+}
+#mobile-menu-vertical-centered {
+	li, a {
+		display: block;
+		position: relative;
+  	float: none;
+  	text-align: center;
+  }
+}
+
+// Footer social links
+#footer-social-links {
+	padding-bottom: 2rem;
+	li {
+		margin-left: 2rem;
+		&:first-child {
+			margin-left: 0rem;
+		}
+	}
+	a {
+		padding: 0.7rem;
+		margin: 0;
+		font-size: 1.5rem;
+		border-radius: 100%;
+		&:hover {
+			color: $white;
+			animation: 0.5s linear 0s 1 alternate social_shadow;
+		}
+	}
+
+	// Social ico colors
+	.fb-color {
+		color: rgba(59, 89, 152, 1);
+		border: 4px solid rgba(59, 89, 152, 1);
+	}
+	.instagram-color {
+		color: rgba(138, 58, 185, 1);
+		border: 4px solid rgba(138, 58, 185, 1);
+	}
+	.youtube-color {
+		color: rgba(220, 30, 48, 1);
+		border: 4px solid rgba(220, 30, 48, 1);
+	}
+	.vk-color {
+		color: rgba(69, 102, 142, 1);
+		border: 4px solid rgba(69, 102, 142, 1);
+	}
+}
+
+@keyframes social_shadow {
+	0% {
+		box-shadow: none;
+	}
+	50% {
+		box-shadow: 0 0 2rem $white;
+	}
+	100% {
+		box-shadow: 0 0 0.2rem $white;
+	}
+}

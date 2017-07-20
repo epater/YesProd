@@ -2,32 +2,29 @@
   "name": "yesprod",
   "version": "1.0.0",
   "description": "A web app for media company",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    // "start": "webpack --config webpack.config.js"
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epater/YesProd.git"
   },
   "keywords": [
+    "photography",
+    "video",
+    "dnepr",
     "wordpress",
-    "js",
-    "webpack",
-    "angular",
-    "photorgaphy",
-    "video"
+    "js"
   ],
   "author": "Alexander Fedorov",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epater/YesProd/issues"
+  },
+  "homepage": "https://github.com/epater/YesProd#readme",
   "devDependencies": {
-    "angular": "^1.2.32",
-    "css-loader": "^0.28.1",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^0.11.1",
-    "foundation-sites": "^6.3.1",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "http-server": "^0.10.0",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.5",
-    "style-loader": "^0.17.0",
-    "webpack": "^2.5.1"
+    "gulp-sass": "^3.1.0"
   }
 }
